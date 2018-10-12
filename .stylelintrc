@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "color-hex-case": "upper",
+    "shorthand-property-no-redundant-values": null
+  }
+}

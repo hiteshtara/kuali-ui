@@ -1,0 +1,31 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+ @include react-md-select-fields;
+
+ .kuali-select-field {
+   .md-list--menu-bl {
+     top: initial;
+     bottom: 0;
+   }
+ 
+   .md-icon-text {
+     width: 100px;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+   }
+ 
+   .md-tile-content div {
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+     word-break: break-all;
+     word-break: break-word;
+     hyphens: auto;
+   }
+ }

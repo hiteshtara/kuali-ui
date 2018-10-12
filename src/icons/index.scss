@@ -1,0 +1,29 @@
+$md-font-icon-include-separators: true;
+$md-font-icon-separator-padding: 8px;
+$md-font-icon-size: 22px;
+
+@include react-md-icons;
+
+@mixin iconVariant($name, $paletteName: null) {
+  $paletteName: $name !default;
+  $variant-color: palette($paletteName);
+
+  .kuali-icon--#{$name} {
+    color: $variant-color;
+  }
+}
+
+@include iconVariant('error', 'chili');
+@include iconVariant('info', 'glacier');
+@include iconVariant('success', 'mint');
+@include iconVariant('warning', 'torch');
+@include iconVariant('wintergreen');
+@include iconVariant('frost');
+@include iconVariant('glacier');
+@include iconVariant('mint');
+@include iconVariant('popsicle');
+@include iconVariant('magma');
+@include iconVariant('chili');
+@include iconVariant('flare');
+@include iconVariant('chili');
+@include iconVariant('torch');

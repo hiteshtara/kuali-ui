@@ -1,0 +1,133 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+.layout--standard {
+  .layout__nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: $z-layout-nav;
+    overflow-y: auto;
+    background-color: #394D5A;
+  }
+
+  .layout__skippy {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .layout__skippy:active,
+  .layout__skippy:focus,
+  .layout__skippy:hover {
+    background-color: #394D5A;
+    color: #FFF;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    font-weight: 700;
+    height: auto;
+    overflow: auto;
+    width: auto;
+    padding: 5px;
+    z-index: 100;
+  }
+
+  .layout__nav--overlayed {
+    display: block;
+  }
+
+  .layout__nav-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    color: #FFF;
+    padding: 15px;
+
+    .kuali-button__icon {
+      color: #FFF;
+    }
+  }
+
+  .nav-list__item--hide {
+    display: none;
+  }
+
+  .layout__sidebar {
+    background-color: #F7F7F7;
+  }
+
+  @include media('>=desktop') {
+    height: 100vh;
+
+    .layout__body {
+      display: flex;
+      height: calc(100% - #{$header-height});
+    }
+
+    .layout__nav {
+      display: block;
+      position: relative;
+      top: auto;
+      flex: 0 0 auto;
+      height: auto;
+      width: $layout-nav-desktop-width;
+      transform: none;
+      transition: width 0.3s ease-in-out;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .layout__nav-close {
+      display: none;
+    }
+
+    .layout__nav--collapsed {
+      width: 54px;
+
+      .nav-list--nested {
+        max-height: 0;
+      }
+    }
+
+    .nav-list__item--hide {
+      display: block;
+    }
+
+    .layout__main {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .layout__content-wrapper {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    .layout__content {
+      flex: 1;
+    }
+
+    .layout__sidebar {
+      flex-grow: 0;
+      width: $layout-sidebar-desktop-width;
+    }
+  }
+}

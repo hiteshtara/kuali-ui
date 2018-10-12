@@ -1,0 +1,191 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+$kuali-popover-pointer-width: 10px;
+$kuali-popover-header-color: $kuali-grey;
+$kuali-popover-bg-color: #FFF;
+$kuali-popover-min-width: 250px;
+$kuali-popover-max-width: 275px;
+$kuali-popover-content-padding: 4px 10px;
+$kuali-popover-shadow-color: rgba(0, 0, 0, 0.3);
+
+.popover__container {
+  position: relative;
+}
+
+.popover__title {
+  background-color: $kuali-popover-header-color;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  padding: $kuali-popover-content-padding;
+}
+
+.popover__content {
+  background-color: $kuali-popover-bg-color;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 $kuali-popover-shadow-color;
+  position: absolute;
+  min-width: $kuali-popover-min-width;
+  max-width: $kuali-popover-max-width;
+  z-index: $z-popover;
+
+  &.popover__content--hide-arrow {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    border-color: transparent;
+    border-width: $kuali-popover-pointer-width;
+    margin-left: calc(#{$kuali-popover-pointer-width} * -1);
+  }
+
+  &::before {
+    border-width: $kuali-popover-pointer-width;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  &--bottom {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::after {
+      left: 50%;
+      bottom: 100%;
+      border-bottom-color: $kuali-popover-bg-color;
+    }
+
+    &::before {
+      left: 50%;
+      bottom: calc(100% - #{$kuali-popover-pointer-width*1.5});
+      box-shadow: 0 2px 5px 0 $kuali-popover-shadow-color;
+    }
+  }
+
+  &.popover__content--aligned {
+    transform: none;
+
+    &.popover__content--aligned--top {
+      &::after,
+      &::before {
+        top: calc(#{$kuali-popover-pointer-width} / 2);
+      }
+
+      &.popover__content--has-title {
+        &.popover__content--right::after {
+          border-right-color: $kuali-popover-header-color;
+        }
+
+        &.popover__content--left::after {
+          border-left-color: $kuali-popover-header-color;
+        }
+      }
+    }
+
+    &.popover__content--aligned--bottom {
+      &::after,
+      &::before {
+        top: calc(100% - #{$kuali-popover-pointer-width} / 2);
+        margin-top: calc(#{$kuali-popover-pointer-width} * -2);
+      }
+    }
+
+    &.popover__content--aligned--left {
+      &::after,
+      &::before {
+        left: calc(#{$kuali-popover-pointer-width} / 2);
+        margin-left: 0;
+      }
+    }
+
+    &.popover__content--aligned--right {
+      &::after,
+      &::before {
+        left: calc(100% - #{$kuali-popover-pointer-width} / 2);
+        margin-left: calc(#{$kuali-popover-pointer-width} * -2);
+      }
+    }
+  }
+
+  &--bottom.popover__content--has-title {
+    &::after {
+      border-bottom-color: $kuali-popover-header-color;
+    }
+  }
+
+  &--left {
+    right: calc(100% + #{$kuali-popover-pointer-width});
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::before {
+      top: calc(50% - #{$kuali-popover-pointer-width});
+      left: calc(100% - #{$kuali-popover-pointer-width/2});
+      border-left-color: $kuali-popover-bg-color;
+      box-shadow: 5px -5px 5px -5px $kuali-popover-shadow-color;
+    }
+
+    &::after {
+      top: calc(50% - #{$kuali-popover-pointer-width});
+      left: calc(100% + #{$kuali-popover-pointer-width});
+      border-left-color: $kuali-popover-bg-color;
+    }
+  }
+
+  &--right {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::before {
+      top: calc(50% - #{$kuali-popover-pointer-width});
+      right: calc(100% - #{$kuali-popover-pointer-width*1.5});
+      border-right-color: $kuali-popover-bg-color;
+      box-shadow: -5px 5px 5px -5px $kuali-popover-shadow-color;
+    }
+
+    &::after {
+      top: calc(50% - #{$kuali-popover-pointer-width});
+      right: 100%;
+      border-right-color: $kuali-popover-bg-color;
+    }
+  }
+
+  &--top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+      left: 50%;
+      top: calc(100% - #{$kuali-popover-pointer-width*1.5});
+      box-shadow: 5px 5px 5px -5px $kuali-popover-shadow-color;
+    }
+
+    &::after {
+      left: 50%;
+      top: 100%;
+      border-top-color: $kuali-popover-bg-color;
+    }
+  }
+}
+
+.popover__content-inner {
+  padding: $kuali-popover-content-padding;
+}

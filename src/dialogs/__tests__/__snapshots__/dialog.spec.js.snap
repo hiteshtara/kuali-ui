@@ -1,0 +1,341 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog Component should render with a close button 1`] = `
+<DialogContainer
+  aria-describedby="Modal Dialog"
+  autopadContent={true}
+  autosizeContent={true}
+  closeOnEsc={true}
+  component={[Function]}
+  contentClassName="kuali-dialog-section"
+  contentComponent="section"
+  defaultVisibleTransitionable={false}
+  dialogClassName="kuali-dialog kuali-dialog--actions-center"
+  focusOnMount={false}
+  id="modal-dialog"
+  lastChild={true}
+  onHide={[Function]}
+  transitionEnterTimeout={300}
+  transitionLeaveTimeout={300}
+  visible={true}
+>
+  <header
+    className="kuali-dialog--header"
+  >
+    <h1
+      className="kuali-dialog--header---title"
+    >
+      Modal Dialog
+    </h1>
+    <div
+      className="kuali-dialog--header---close"
+    >
+      <IconButton
+        onClick={[Function]}
+      >
+        <Icon
+          aria-hidden={true}
+          iconClassName="material-icons"
+          name="close"
+          variant="default"
+        />
+      </IconButton>
+    </div>
+  </header>
+  <div
+    className="kuali-dialog--content"
+  >
+    <div>
+      Some really nice modal content goes here!
+    </div>
+  </div>
+</DialogContainer>
+`;
+
+exports[`Dialog Component should render with actions positioned left 1`] = `
+<DialogContainer
+  actions={
+    Array [
+      <RaisedButton
+        label="first"
+      />,
+      <RaisedButton
+        label="second"
+      />,
+    ]
+  }
+  aria-describedby="Modal Dialog"
+  autopadContent={true}
+  autosizeContent={true}
+  closeOnEsc={true}
+  component={[Function]}
+  contentClassName="kuali-dialog-section"
+  contentComponent="section"
+  defaultVisibleTransitionable={false}
+  dialogClassName="kuali-dialog kuali-dialog--actions-left kuali-dialog--actions-center"
+  focusOnMount={false}
+  id="modal-dialog"
+  lastChild={true}
+  onHide={[Function]}
+  transitionEnterTimeout={300}
+  transitionLeaveTimeout={300}
+  visible={true}
+>
+  <header
+    className="kuali-dialog--header"
+  >
+    <h1
+      className="kuali-dialog--header---title"
+    >
+      Modal Dialog
+    </h1>
+    <div
+      className="kuali-dialog--header---close"
+    >
+      <IconButton
+        onClick={[Function]}
+      >
+        <Icon
+          aria-hidden={true}
+          iconClassName="material-icons"
+          name="close"
+          variant="default"
+        />
+      </IconButton>
+    </div>
+  </header>
+  <div
+    className="kuali-dialog--content"
+  >
+    <div>
+      Some really nice modal content goes here!
+    </div>
+  </div>
+</DialogContainer>
+`;
+
+exports[`Dialog Component should render with actions positioned right 1`] = `
+<DialogContainer
+  actions={
+    Array [
+      <RaisedButton
+        label="first"
+      />,
+      <RaisedButton
+        label="second"
+      />,
+    ]
+  }
+  aria-describedby="Modal Dialog"
+  autopadContent={true}
+  autosizeContent={true}
+  closeOnEsc={true}
+  component={[Function]}
+  contentClassName="kuali-dialog-section"
+  contentComponent="section"
+  defaultVisibleTransitionable={false}
+  dialogClassName="kuali-dialog kuali-dialog--actions-right kuali-dialog--actions-center"
+  focusOnMount={false}
+  id="modal-dialog"
+  lastChild={true}
+  onHide={[Function]}
+  transitionEnterTimeout={300}
+  transitionLeaveTimeout={300}
+  visible={true}
+>
+  <header
+    className="kuali-dialog--header"
+  >
+    <h1
+      className="kuali-dialog--header---title"
+    >
+      Modal Dialog
+    </h1>
+    <div
+      className="kuali-dialog--header---close"
+    >
+      <IconButton
+        onClick={[Function]}
+      >
+        <Icon
+          aria-hidden={true}
+          iconClassName="material-icons"
+          name="close"
+          variant="default"
+        />
+      </IconButton>
+    </div>
+  </header>
+  <div
+    className="kuali-dialog--content"
+  >
+    <div>
+      Some really nice modal content goes here!
+    </div>
+  </div>
+</DialogContainer>
+`;
+
+exports[`Dialog Component should render without a close button 1`] = `
+<DialogContainer
+  aria-describedby="Modal Dialog"
+  autopadContent={true}
+  autosizeContent={true}
+  closeOnEsc={true}
+  component={[Function]}
+  contentClassName="kuali-dialog-section"
+  contentComponent="section"
+  defaultVisibleTransitionable={false}
+  dialogClassName="kuali-dialog kuali-dialog--actions-center"
+  focusOnMount={false}
+  id="modal-dialog"
+  lastChild={true}
+  onHide={[Function]}
+  transitionEnterTimeout={300}
+  transitionLeaveTimeout={300}
+  visible={true}
+>
+  <header
+    className="kuali-dialog--header"
+  >
+    <h1
+      className="kuali-dialog--header---title"
+    >
+      Modal Dialog
+    </h1>
+    <div
+      className="kuali-dialog--header---close"
+    >
+      <IconButton
+        onClick={[Function]}
+      >
+        <Icon
+          aria-hidden={true}
+          iconClassName="material-icons"
+          name="close"
+          variant="default"
+        />
+      </IconButton>
+    </div>
+  </header>
+  <div
+    className="kuali-dialog--content"
+  >
+    <div>
+      Some really nice modal content goes here!
+    </div>
+  </div>
+</DialogContainer>
+`;
+
+exports[`Dialog Component should render without footer 1`] = `
+<DialogContainer
+  actions={null}
+  aria-describedby="Modal Dialog"
+  autopadContent={true}
+  autosizeContent={true}
+  closeOnEsc={true}
+  component={[Function]}
+  contentClassName="kuali-dialog-section"
+  contentComponent="section"
+  defaultVisibleTransitionable={false}
+  dialogClassName="kuali-dialog kuali-dialog--actions-center"
+  focusOnMount={false}
+  id="modal-dialog"
+  lastChild={true}
+  onHide={[Function]}
+  transitionEnterTimeout={300}
+  transitionLeaveTimeout={300}
+  visible={true}
+>
+  <header
+    className="kuali-dialog--header"
+  >
+    <h1
+      className="kuali-dialog--header---title"
+    >
+      Modal Dialog
+    </h1>
+    <div
+      className="kuali-dialog--header---close"
+    >
+      <IconButton
+        onClick={[Function]}
+      >
+        <Icon
+          aria-hidden={true}
+          iconClassName="material-icons"
+          name="close"
+          variant="default"
+        />
+      </IconButton>
+    </div>
+  </header>
+  <div
+    className="kuali-dialog--content"
+  >
+    <div>
+      Some really nice modal content goes here!
+    </div>
+  </div>
+</DialogContainer>
+`;
+
+exports[`Dialog Component should render without header 1`] = `
+<DialogContainer
+  aria-describedby="Modal Dialog"
+  autopadContent={true}
+  autosizeContent={true}
+  closeOnEsc={true}
+  component={[Function]}
+  contentClassName="kuali-dialog-section"
+  contentComponent="section"
+  defaultVisibleTransitionable={false}
+  dialogClassName="kuali-dialog kuali-dialog--actions-center"
+  focusOnMount={false}
+  id="modal-dialog"
+  lastChild={true}
+  onHide={[Function]}
+  transitionEnterTimeout={300}
+  transitionLeaveTimeout={300}
+  visible={true}
+>
+  <div
+    className="kuali-dialog--content"
+  >
+    <div>
+      Some really nice modal content goes here!
+    </div>
+  </div>
+</DialogContainer>
+`;
+
+exports[`Dialog Component should render without header or footer 1`] = `
+<DialogContainer
+  actions={null}
+  aria-describedby="Modal Dialog"
+  autopadContent={true}
+  autosizeContent={true}
+  closeOnEsc={true}
+  component={[Function]}
+  contentClassName="kuali-dialog-section"
+  contentComponent="section"
+  defaultVisibleTransitionable={false}
+  dialogClassName="kuali-dialog kuali-dialog--actions-center"
+  focusOnMount={false}
+  id="modal-dialog"
+  lastChild={true}
+  onHide={[Function]}
+  transitionEnterTimeout={300}
+  transitionLeaveTimeout={300}
+  visible={true}
+>
+  <div
+    className="kuali-dialog--content"
+  >
+    <div>
+      Some really nice modal content goes here!
+    </div>
+  </div>
+</DialogContainer>
+`;

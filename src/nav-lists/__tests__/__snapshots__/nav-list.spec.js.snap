@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavList Component should render a nav list 1`] = `
+<ul
+  className="nav-list"
+>
+  <withInk(NavListItem)
+    active={false}
+    container={[Function]}
+    defaultNestedCollapsed={false}
+    iconName="create"
+  >
+    Pellentesque habitant morbi tristique senectus
+  </withInk(NavListItem)>
+  <withInk(NavListItem)
+    active={false}
+    container={[Function]}
+    defaultNestedCollapsed={false}
+    iconName="description"
+  >
+    Menu Option
+  </withInk(NavListItem)>
+  <withInk(NavListItem)
+    active={true}
+    container={[Function]}
+    defaultNestedCollapsed={false}
+    iconName="question_answer"
+  >
+    Active Menu Option
+  </withInk(NavListItem)>
+  <withInk(NavListItem)
+    active={false}
+    container={[Function]}
+    defaultNestedCollapsed={false}
+    iconName="settings"
+  >
+    Configuration
+  </withInk(NavListItem)>
+</ul>
+`;
+
+exports[`NavList Component should render with a nested menu 1`] = `
+<ul
+  className="nav-list"
+>
+  <withInk(NavListItem)
+    active={false}
+    container={[Function]}
+    defaultNestedCollapsed={false}
+    iconName="create"
+  >
+    Pellentesque habitant morbi tristique
+  </withInk(NavListItem)>
+  <withInk(NavListItem)
+    active={true}
+    container={[Function]}
+    defaultNestedCollapsed={false}
+    iconName="description"
+  >
+    Menu Option
+  </withInk(NavListItem)>
+  <withInk(NavListItem)
+    active={false}
+    container={[Function]}
+    defaultNestedCollapsed={false}
+  >
+    Menu Option No Icon
+  </withInk(NavListItem)>
+  <withInk(NavListItem)
+    active={false}
+    container={[Function]}
+    defaultNestedCollapsed={false}
+    iconName="question_answer"
+  >
+    Item with Nested Nav
+    <NavList
+      collapsed={false}
+      nested={false}
+    >
+      <withInk(NavListItem)
+        active={false}
+        container={[Function]}
+        defaultNestedCollapsed={false}
+      >
+        Without Icon
+      </withInk(NavListItem)>
+      <withInk(NavListItem)
+        active={false}
+        container={[Function]}
+        defaultNestedCollapsed={false}
+        iconName="description"
+      >
+        With Icon
+      </withInk(NavListItem)>
+    </NavList>
+  </withInk(NavListItem)>
+  <withInk(NavListItem)
+    active={false}
+    container={[Function]}
+    defaultNestedCollapsed={false}
+    iconName="settings"
+  >
+    Pellentesque habitant morbi tristique
+  </withInk(NavListItem)>
+</ul>
+`;

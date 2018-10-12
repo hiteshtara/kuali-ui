@@ -1,0 +1,250 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+@import "./react-md-override";
+
+$kuali-flat-button-text-color: #555;
+
+$kuali-raised-button-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+
+$kuali-button-color: #ECECEC;
+$kuali-button-text-color: #555;
+$kuali-button-hover-color: darken($kuali-button-color, 5);
+$kuali-button-pressed-color: darken($kuali-button-color, 10);
+
+.kuali-button {
+  position: relative;
+  background-color: $kuali-button-color;
+  color: $kuali-button-text-color;
+  border: 0;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px 8px 15px;
+  font-weight: 500;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+
+  * {
+    pointer-events: none;
+  }
+
+  & > &__icon {
+    margin-top: -2px;
+    margin-bottom: -1px;
+
+    @include media(">=desktop") {
+      margin-top: -3px;
+      margin-bottom: -1px;
+    }
+  }
+
+  & > &__label {
+    font-size: 14px;
+  }
+
+  & + & {
+    margin-left: 5px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $kuali-button-hover-color;
+  }
+
+  &:active {
+    background-color: $kuali-button-pressed-color;
+  }
+
+  &__label + &__icon,
+  &__icon + &__label {
+    margin-left: 8px;
+  }
+
+  .kuali-button-group & {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $kuali-button-color;
+    color: lighten($kuali-button-text-color, 20);
+
+    .kuali-button__icon {
+      color: inherit;
+    }
+
+    &:active {
+      background-color: $kuali-button-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $kuali-button-color;
+    }
+  }
+
+  .kuali-button-group &:first-of-type {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+
+  .kuali-button-group &:last-of-type {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+}
+
+// ===========
+// Block(full-width)
+// ===========
+.kuali-button--block {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.kuali-button + .kuali-button--block {
+  margin-left: 0;
+}
+
+// ===========
+// Sizes
+// ===========
+.kuali-button--size__small {
+  @include media(">=desktop") {
+    padding: 4px 10px 3px 10px;
+
+    .kuali-button__icon {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .kuali-button__label {
+      font-size: 12px;
+    }
+  }
+}
+
+// ===========
+// Types
+// ===========
+.kuali-button--raised {
+  position: relative;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.25);
+  transition: top ease-in-out 0.3s;
+
+  &:active {
+    box-shadow: none;
+    top: 1px;
+  }
+}
+
+.kuali-button--icon {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 14px 12px 12px;
+
+  &:hover {
+    background-color: $kuali-button-hover-color;
+  }
+
+  &:active {
+    background-color: $kuali-button-pressed-color;
+  }
+}
+
+// ===========
+// Variant Builder
+// ===========
+@mixin buttonVariant($name, $paletteName: null) {
+  $paletteName: $name !default;
+  $variant-background: palette($paletteName);
+  $variant-text-color: #FFF;
+
+  @if lightness($variant-background) > 80 {
+    $variant-text-color: $kuali-button-text-color;
+  }
+
+  .kuali-button--#{$name} {
+    color: $variant-text-color;
+    background-color: $variant-background;
+
+    &:hover {
+      background-color: darken($variant-background, 5);
+    }
+
+    &:active {
+      background-color: darken($variant-background, 10);
+    }
+
+    .kuali-button__icon {
+      color: inherit;
+    }
+
+    &.kuali-button--icon {
+      color: $variant-background;
+      background-color: transparent;
+
+      &:hover {
+        background-color: lighten($variant-background, 30);
+      }
+
+      &:active {
+        background-color: lighten($variant-background, 20);
+      }
+    }
+  }
+}
+
+// ===========
+// Variants
+// ===========
+.kuali-button--clear {
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.kuali-button--plain {
+  background-color: #FFF;
+}
+
+@include buttonVariant("error", "chili");
+@include buttonVariant("info", "glacier");
+@include buttonVariant("success", "mint");
+@include buttonVariant("warning", "torch");
+// NOTE: glacier isn't technically the primary color but it is that way for buttons
+@include buttonVariant("primary", "glacier");
+@include buttonVariant("wintergreen");
+@include buttonVariant("frost");
+@include buttonVariant("glacier");
+@include buttonVariant("mint");
+@include buttonVariant("popsicle");
+@include buttonVariant("magma");
+@include buttonVariant("chili");
+@include buttonVariant("flare");
+@include buttonVariant("chili");
+@include buttonVariant("torch");

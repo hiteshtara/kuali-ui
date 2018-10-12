@@ -1,0 +1,84 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+$document-layout-bg-color: rgb(220, 220, 220);
+
+$document-layout-gutter: 20px;
+$document-layout-gutter-half: $document-layout-gutter/2;
+$document-layout-vert-spacing: 20px;
+
+$document-layout-desktop-gutter: 30px;
+$document-layout-desktop-gutter-half: $document-layout-desktop-gutter/2;
+$document-layout-desktop-menu-width: 200px;
+$document-layout-desktop-sidebar-width: 230px;
+
+.document-layout {
+  min-height: 100vh;
+  background-color: $document-layout-bg-color;
+}
+
+.document-layout__menu,
+.document-layout__main {
+  margin-bottom: $document-layout-vert-spacing;
+}
+
+.document-layout__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: $document-layout-vert-spacing;
+  padding-right: $document-layout-gutter-half;
+  padding-bottom: $document-layout-vert-spacing;
+  padding-left: $document-layout-gutter-half;
+}
+
+.document-layout__main {
+  background-color: #FFF;
+}
+
+@include media(">=desktop") {
+  .document-layout {
+    height: 100vh;
+  }
+
+  .document-layout__menu,
+  .document-layout__main {
+    margin-bottom: 0;
+  }
+
+  .document-layout__menu,
+  .document-layout__sidebar,
+  .document-layout__main {
+    margin-right: $document-layout-desktop-gutter-half;
+    margin-left: $document-layout-desktop-gutter-half;
+  }
+
+  .document-layout__body {
+    display: flex;
+    flex-direction: row;
+    padding-top: $document-layout-vert-spacing * 2;
+    padding-right: $document-layout-desktop-gutter-half;
+    padding-bottom: $document-layout-vert-spacing;
+    padding-left: $document-layout-desktop-gutter-half;
+  }
+
+  .document-layout__menu {
+    flex: 0 0 auto;
+    width: $document-layout-desktop-menu-width;
+  }
+
+  .document-layout__main {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .document-layout__sidebar {
+    flex: 0 0
+      ($document-layout-desktop-sidebar-width - $layout-hoz-desktop-padding);
+  }
+}

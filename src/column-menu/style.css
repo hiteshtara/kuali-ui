@@ -1,0 +1,42 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+.frame {
+  border: 1px solid #ccc;
+  height: 310px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.container {
+  transition: 0.25s;
+}
+
+.col,
+.col-help {
+  border-right: 1px solid #bbb;
+  float: left;
+  height: 310px;
+  overflow: hidden;
+  width: 180px;
+}
+
+.col-help {
+  background-color: #ddd;
+  padding: 36px 24px;
+}
+
+.hdr {
+  background-color: #ddd;
+  border-bottom: 1px solid #bbb;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  position: relative;
+}

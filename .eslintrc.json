@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "standard",
+    "standard-jsx",
+    "standard-react",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 7,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalDecorators": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": ["import", "contains", "jest", "react"],
+  "rules": {
+    "contains/contains": [
+      "error",
+      {
+        "toFind": "Copyright",
+        "errorMessage": "No License Found"
+      }
+    ],
+    "jest/no-disabled-tests": "warn",
+    "standard/no-callback-literal": "off"
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest/globals": true
+  }
+}

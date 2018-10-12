@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuButton Component should render 1`] = `
+<Menu
+  anchor={
+    Object {
+      "x": "inner right",
+      "y": "overlap",
+    }
+  }
+  cascadingAnchor={
+    Object {
+      "x": "right",
+      "y": "overlap",
+    }
+  }
+  cascadingZDepth={3}
+  fixedTo={[Window]}
+  id="button-menu"
+  listHeightRestricted={true}
+  listZDepth={2}
+  onBlur={[Function]}
+  onClose={[Function]}
+  onKeyDown={[Function]}
+  position="tr"
+  repositionOnResize={false}
+  repositionOnScroll={true}
+  simplified={true}
+  toggle={
+    <withInk(withTooltip(Button))
+      aria-controls="button-menu"
+      block={false}
+      component="button"
+      icon={false}
+      iconBefore={true}
+      id={undefined}
+      label="Toggle Open a Menu"
+      onClick={[Function]}
+      raised={true}
+      role="menu"
+      size="default"
+      type="submit"
+      variant="torch"
+    >
+      <Icon
+        aria-hidden={true}
+        iconClassName="material-icons"
+        name="settings"
+        variant="default"
+      />
+    </withInk(withTooltip(Button))>
+  }
+  visible={false}
+>
+  <ListItem
+    activeClassName="md-text--theme-primary"
+    animateNestedItems={true}
+    component="div"
+    expanderIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        keyboard_arrow_down
+      </FontIcon>
+    }
+    itemComponent="li"
+    key="0"
+    onClick={[Function]}
+    primaryText="Item One"
+    renderChildrenOutside={false}
+    tabIndex={-1}
+  />
+  <ListItem
+    activeClassName="md-text--theme-primary"
+    animateNestedItems={true}
+    component="div"
+    expanderIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        keyboard_arrow_down
+      </FontIcon>
+    }
+    itemComponent="li"
+    key="1"
+    onClick={[Function]}
+    primaryText="Item Two"
+    renderChildrenOutside={false}
+    tabIndex={-1}
+  />
+  <ListItem
+    activeClassName="md-text--theme-primary"
+    animateNestedItems={true}
+    component="div"
+    expanderIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        keyboard_arrow_down
+      </FontIcon>
+    }
+    itemComponent="li"
+    key="2"
+    onClick={[Function]}
+    primaryText="Item Three"
+    renderChildrenOutside={false}
+    tabIndex={-1}
+  />
+  <ListItem
+    activeClassName="md-text--theme-primary"
+    animateNestedItems={true}
+    component="div"
+    expanderIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        keyboard_arrow_down
+      </FontIcon>
+    }
+    itemComponent="li"
+    key="3"
+    onClick={[Function]}
+    primaryText="Item Four"
+    renderChildrenOutside={false}
+    tabIndex={-1}
+  />
+</Menu>
+`;

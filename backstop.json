@@ -1,0 +1,41 @@
+{
+  "id": "kuali-ui-regression-tests",
+  "viewports": [
+    {
+      "name": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "name": "tablet_v",
+      "width": 568,
+      "height": 1024
+    },
+    {
+      "name": "tablet_h",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "desktop",
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Buttons",
+      "url": "http://localhost:9001/iframe.html?selectedKind=Buttons&selectedStory=Usage",
+      "selectors": [
+        "document"
+      ]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": ".backstop/bitmaps_reference",
+    "bitmaps_test": ".backstop/bitmaps_test",
+    "casper_scripts": ".backstop/casper_scripts",
+    "html_report": ".backstop/html_report",
+    "ci_report": ".backstop/ci_report"
+  }
+}

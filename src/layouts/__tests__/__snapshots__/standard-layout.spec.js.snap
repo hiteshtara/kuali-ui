@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StandardLayout Component should render 1`] = `
+<div
+  className="layout layout--standard"
+>
+  <div
+    id="skipmenu"
+  >
+    <a
+      className="layout__skippy"
+      href="#nav"
+    >
+      Skip directly to navigation
+    </a>
+    <a
+      className="layout__skippy"
+      href="#mainContent"
+    >
+      Skip directly to main content
+    </a>
+  </div>
+  <Header
+    Logo={<BrandLogo />}
+    menuItems={Array []}
+    module={
+      Object {
+        "name": "App Name",
+      }
+    }
+    onBrandSelected={[Function]}
+    user={
+      Object {
+        "name": "User Name",
+      }
+    }
+  />
+  <div
+    className="layout__body"
+  >
+    <nav
+      className="layout__nav"
+      id="nav"
+    >
+      <NavList
+        collapsed={false}
+        nested={false}
+      >
+        <withInk(NavListItem)
+          active={false}
+          className="nav-list__item--hide"
+          container={[Function]}
+          defaultNestedCollapsed={false}
+          iconName="clear"
+          onClick={[Function]}
+        >
+          Hide Menu
+        </withInk(NavListItem)>
+      </NavList>
+      <NavList
+        collapsed={false}
+        nested={false}
+      >
+        <withInk(NavListItem)
+          active={false}
+          container={[Function]}
+          defaultNestedCollapsed={false}
+          iconName="create"
+        >
+          Pellentesque habitant morbi tristique senectus
+        </withInk(NavListItem)>
+      </NavList>
+      <FlatButton
+        className="layout__nav-close"
+        onClick={[Function]}
+        variant="clear"
+      >
+        <Icon
+          aria-hidden={true}
+          iconClassName="material-icons"
+          name="close"
+          variant="default"
+        />
+      </FlatButton>
+    </nav>
+    <main
+      className="layout__main"
+    >
+      <TitleBar
+        hasNav={true}
+        onToggleNavOverlay={[Function]}
+      >
+        Page Title
+      </TitleBar>
+      <div
+        className="layout__content-wrapper"
+      >
+        <div
+          className="layout__content"
+          id="mainContent"
+        >
+          <p>
+            body content
+          </p>
+        </div>
+        <Sidebar
+          className="layout__sidebar"
+        >
+          <p>
+            sidebar component
+          </p>
+        </Sidebar>
+      </div>
+    </main>
+  </div>
+</div>
+`;
+
+exports[`StandardLayout Component should render without a nav list 1`] = `
+<div
+  className="layout layout--standard"
+>
+  <div
+    id="skipmenu"
+  >
+    <a
+      className="layout__skippy"
+      href="#nav"
+    >
+      Skip directly to navigation
+    </a>
+    <a
+      className="layout__skippy"
+      href="#mainContent"
+    >
+      Skip directly to main content
+    </a>
+  </div>
+  <Header
+    Logo={<BrandLogo />}
+    menuItems={Array []}
+    module={
+      Object {
+        "name": "App Name",
+      }
+    }
+    onBrandSelected={[Function]}
+    user={
+      Object {
+        "name": "User Name",
+      }
+    }
+  />
+  <div
+    className="layout__body"
+  >
+    <main
+      className="layout__main"
+    >
+      <TitleBar
+        hasNav={false}
+        onToggleNavOverlay={[Function]}
+      >
+        Page Title
+      </TitleBar>
+      <div
+        className="layout__content-wrapper"
+      >
+        <div
+          className="layout__content"
+          id="mainContent"
+        >
+          <p>
+            body content
+          </p>
+        </div>
+        <Sidebar
+          className="layout__sidebar"
+        >
+          <p>
+            sidebar component
+          </p>
+        </Sidebar>
+      </div>
+    </main>
+  </div>
+</div>
+`;

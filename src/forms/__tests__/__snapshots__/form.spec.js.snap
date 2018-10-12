@@ -1,0 +1,653 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Component should render grid layout with grid lines 1`] = `
+<form
+  className="kuali-form kuali-form--gridded"
+  style={Object {}}
+>
+  <div
+    className="kuali-form--fieldset"
+  >
+    <div>
+      <FieldGroup>
+        <TextField
+          className="md-cell kuali-form--cell"
+          fullWidth={true}
+          id="name"
+          label="Name"
+          leftIconStateful={true}
+          lineDirection="left"
+          passwordIcon={
+            <FontIcon
+              iconClassName="material-icons"
+            >
+              remove_red_eye
+            </FontIcon>
+          }
+          rightIconStateful={true}
+          type="text"
+        />
+        <DatePicker
+          autoOk={true}
+          className="md-cell kuali-form--cell"
+          formatOptions={
+            Object {
+              "day": "numeric",
+              "month": "short",
+              "year": "numeric",
+            }
+          }
+          id="birthdate"
+          label="Birthdate"
+        />
+        <SelectField
+          anchor={
+            Object {
+              "x": "inner left",
+              "y": "overlap",
+            }
+          }
+          className="md-cell kuali-form--cell"
+          defaultValue=""
+          defaultVisible={false}
+          dropdownIcon={
+            <FontIcon
+              iconClassName="material-icons"
+            >
+              arrow_drop_down
+            </FontIcon>
+          }
+          fixedTo={[Window]}
+          id="state"
+          itemLabel="name"
+          itemProps="getProps"
+          itemValue="abbreviation"
+          keyboardMatchingTimeout={1000}
+          label="State"
+          lineDirection="left"
+          menuItems={
+            Array [
+              Object {
+                "abbreviation": "CO",
+                "name": "Colorado",
+              },
+              Object {
+                "abbreviation": "FL",
+                "name": "Florida",
+              },
+              Object {
+                "abbreviation": "IN",
+                "name": "Indiana",
+              },
+              Object {
+                "abbreviation": "UT",
+                "name": "Utah",
+              },
+            ]
+          }
+          position="tl"
+          repositionOnResize={false}
+          repositionOnScroll={true}
+          transitionName="md-drop"
+          transitionTime={300}
+        />
+        <TextField
+          className="md-cell kuali-form--cell"
+          error={true}
+          errorText="Something went very wrong"
+          fullWidth={true}
+          id="error"
+          label="Error"
+          leftIconStateful={true}
+          lineDirection="left"
+          passwordIcon={
+            <FontIcon
+              iconClassName="material-icons"
+            >
+              remove_red_eye
+            </FontIcon>
+          }
+          rightIconStateful={true}
+          type="text"
+        />
+      </FieldGroup>
+      <FieldGroup>
+        <div
+          className="kuali-form--cell"
+        >
+          <label
+            className="kuali-form--cell---label"
+            htmlFor="hobbies"
+          >
+            Hobbies
+          </label>
+          <SelectionControl
+            checkedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box
+              </FontIcon>
+            }
+            checkedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_checked
+              </FontIcon>
+            }
+            id="reading"
+            label="Reading"
+            name="hobbies"
+            type="checkbox"
+            uncheckedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box_outline_blank
+              </FontIcon>
+            }
+            uncheckedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_unchecked
+              </FontIcon>
+            }
+            value="reading"
+          />
+          <SelectionControl
+            checkedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box
+              </FontIcon>
+            }
+            checkedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_checked
+              </FontIcon>
+            }
+            id="running"
+            label="Running"
+            name="hobbies"
+            type="checkbox"
+            uncheckedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box_outline_blank
+              </FontIcon>
+            }
+            uncheckedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_unchecked
+              </FontIcon>
+            }
+            value="running"
+          />
+          <SelectionControl
+            checkedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box
+              </FontIcon>
+            }
+            checkedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_checked
+              </FontIcon>
+            }
+            id="swimming"
+            label="Swimming"
+            name="hobbies"
+            type="checkbox"
+            uncheckedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box_outline_blank
+              </FontIcon>
+            }
+            uncheckedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_unchecked
+              </FontIcon>
+            }
+            value="swimming"
+          />
+        </div>
+        <div
+          className="kuali-form--cell"
+        >
+          <SelectionControlGroup
+            component="fieldset"
+            controlComponent={[Function]}
+            controls={
+              Array [
+                Object {
+                  "label": "Single",
+                  "value": "single",
+                },
+                Object {
+                  "label": "Married",
+                  "value": "married",
+                },
+              ]
+            }
+            defaultValue="single"
+            id="maritalstatus"
+            label="Marital Status"
+            labelClassName="md-subheading-1"
+            labelComponent="legend"
+            name="maritalstatus"
+            type="radio"
+          />
+        </div>
+      </FieldGroup>
+      <FieldGroup>
+        <div
+          className="kuali-form--cell"
+        >
+          <label
+            className="kuali-form--cell---label"
+            htmlFor="citizen"
+          >
+            U.S. Citizen
+          </label>
+          <SelectionControl
+            checkedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box
+              </FontIcon>
+            }
+            checkedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_checked
+              </FontIcon>
+            }
+            defaultChecked={true}
+            id="citizen"
+            name="citizen"
+            type="switch"
+            uncheckedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box_outline_blank
+              </FontIcon>
+            }
+            uncheckedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_unchecked
+              </FontIcon>
+            }
+          />
+        </div>
+      </FieldGroup>
+      <FieldGroup>
+        <TextField
+          className="md-cell kuali-form--cell"
+          fullWidth={true}
+          id="lifestory"
+          label="Life Story"
+          leftIconStateful={true}
+          lineDirection="left"
+          passwordIcon={
+            <FontIcon
+              iconClassName="material-icons"
+            >
+              remove_red_eye
+            </FontIcon>
+          }
+          rightIconStateful={true}
+          rows={2}
+          type="text"
+        />
+      </FieldGroup>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Form Component should render grid layout without grid lines 1`] = `
+<form
+  className="kuali-form"
+  style={Object {}}
+>
+  <div
+    className="kuali-form--fieldset"
+  >
+    <div>
+      <FieldGroup>
+        <TextField
+          className="md-cell kuali-form--cell"
+          fullWidth={true}
+          id="name"
+          label="Name"
+          leftIconStateful={true}
+          lineDirection="left"
+          passwordIcon={
+            <FontIcon
+              iconClassName="material-icons"
+            >
+              remove_red_eye
+            </FontIcon>
+          }
+          rightIconStateful={true}
+          type="text"
+        />
+        <DatePicker
+          autoOk={true}
+          className="md-cell kuali-form--cell"
+          formatOptions={
+            Object {
+              "day": "numeric",
+              "month": "short",
+              "year": "numeric",
+            }
+          }
+          id="birthdate"
+          label="Birthdate"
+        />
+        <SelectField
+          anchor={
+            Object {
+              "x": "inner left",
+              "y": "overlap",
+            }
+          }
+          className="md-cell kuali-form--cell"
+          defaultValue=""
+          defaultVisible={false}
+          dropdownIcon={
+            <FontIcon
+              iconClassName="material-icons"
+            >
+              arrow_drop_down
+            </FontIcon>
+          }
+          fixedTo={[Window]}
+          id="state"
+          itemLabel="name"
+          itemProps="getProps"
+          itemValue="abbreviation"
+          keyboardMatchingTimeout={1000}
+          label="State"
+          lineDirection="left"
+          menuItems={
+            Array [
+              Object {
+                "abbreviation": "CO",
+                "name": "Colorado",
+              },
+              Object {
+                "abbreviation": "FL",
+                "name": "Florida",
+              },
+              Object {
+                "abbreviation": "IN",
+                "name": "Indiana",
+              },
+              Object {
+                "abbreviation": "UT",
+                "name": "Utah",
+              },
+            ]
+          }
+          position="tl"
+          repositionOnResize={false}
+          repositionOnScroll={true}
+          transitionName="md-drop"
+          transitionTime={300}
+        />
+        <TextField
+          className="md-cell kuali-form--cell"
+          error={true}
+          errorText="Something went very wrong"
+          fullWidth={true}
+          id="error"
+          label="Error"
+          leftIconStateful={true}
+          lineDirection="left"
+          passwordIcon={
+            <FontIcon
+              iconClassName="material-icons"
+            >
+              remove_red_eye
+            </FontIcon>
+          }
+          rightIconStateful={true}
+          type="text"
+        />
+      </FieldGroup>
+      <FieldGroup>
+        <div
+          className="kuali-form--cell"
+        >
+          <label
+            className="kuali-form--cell---label"
+            htmlFor="hobbies"
+          >
+            Hobbies
+          </label>
+          <SelectionControl
+            checkedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box
+              </FontIcon>
+            }
+            checkedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_checked
+              </FontIcon>
+            }
+            id="reading"
+            label="Reading"
+            name="hobbies"
+            type="checkbox"
+            uncheckedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box_outline_blank
+              </FontIcon>
+            }
+            uncheckedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_unchecked
+              </FontIcon>
+            }
+            value="reading"
+          />
+          <SelectionControl
+            checkedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box
+              </FontIcon>
+            }
+            checkedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_checked
+              </FontIcon>
+            }
+            id="running"
+            label="Running"
+            name="hobbies"
+            type="checkbox"
+            uncheckedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box_outline_blank
+              </FontIcon>
+            }
+            uncheckedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_unchecked
+              </FontIcon>
+            }
+            value="running"
+          />
+          <SelectionControl
+            checkedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box
+              </FontIcon>
+            }
+            checkedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_checked
+              </FontIcon>
+            }
+            id="swimming"
+            label="Swimming"
+            name="hobbies"
+            type="checkbox"
+            uncheckedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box_outline_blank
+              </FontIcon>
+            }
+            uncheckedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_unchecked
+              </FontIcon>
+            }
+            value="swimming"
+          />
+        </div>
+        <div
+          className="kuali-form--cell"
+        >
+          <SelectionControlGroup
+            component="fieldset"
+            controlComponent={[Function]}
+            controls={
+              Array [
+                Object {
+                  "label": "Single",
+                  "value": "single",
+                },
+                Object {
+                  "label": "Married",
+                  "value": "married",
+                },
+              ]
+            }
+            defaultValue="single"
+            id="maritalstatus"
+            label="Marital Status"
+            labelClassName="md-subheading-1"
+            labelComponent="legend"
+            name="maritalstatus"
+            type="radio"
+          />
+        </div>
+      </FieldGroup>
+      <FieldGroup>
+        <div
+          className="kuali-form--cell"
+        >
+          <label
+            className="kuali-form--cell---label"
+            htmlFor="citizen"
+          >
+            U.S. Citizen
+          </label>
+          <SelectionControl
+            checkedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box
+              </FontIcon>
+            }
+            checkedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_checked
+              </FontIcon>
+            }
+            defaultChecked={true}
+            id="citizen"
+            name="citizen"
+            type="switch"
+            uncheckedCheckboxIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                check_box_outline_blank
+              </FontIcon>
+            }
+            uncheckedRadioIcon={
+              <FontIcon
+                iconClassName="material-icons"
+              >
+                radio_button_unchecked
+              </FontIcon>
+            }
+          />
+        </div>
+      </FieldGroup>
+      <FieldGroup>
+        <TextField
+          className="md-cell kuali-form--cell"
+          fullWidth={true}
+          id="lifestory"
+          label="Life Story"
+          leftIconStateful={true}
+          lineDirection="left"
+          passwordIcon={
+            <FontIcon
+              iconClassName="material-icons"
+            >
+              remove_red_eye
+            </FontIcon>
+          }
+          rightIconStateful={true}
+          rows={2}
+          type="text"
+        />
+      </FieldGroup>
+    </div>
+  </div>
+</form>
+`;

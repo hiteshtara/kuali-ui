@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popover Component should render bottom aligned 1`] = `
+<Popover
+  align="bottom"
+  content={
+    <div>
+      Popover content is the best
+    </div>
+  }
+  onRequestClose={[Function]}
+  position="left"
+  title="My Popover"
+  trapFocus={false}
+  visible={true}
+>
+  <p>
+    render around me
+  </p>
+</Popover>
+`;
+
+exports[`Popover Component should render default 1`] = `
+<Popover
+  content={
+    <div>
+      Popover content is the best
+    </div>
+  }
+  onRequestClose={[Function]}
+  position="bottom"
+  title="My Popover"
+  trapFocus={false}
+  visible={true}
+>
+  <p>
+    render around me
+  </p>
+</Popover>
+`;
+
+exports[`Popover Component should render left 1`] = `
+<Popover
+  content={
+    <div>
+      Popover content is the best
+    </div>
+  }
+  onRequestClose={[Function]}
+  position="left"
+  title="My Popover"
+  trapFocus={false}
+  visible={true}
+>
+  <p>
+    render around me
+  </p>
+</Popover>
+`;
+
+exports[`Popover Component should render left aligned 1`] = `
+<Popover
+  align="left"
+  content={
+    <div>
+      Popover content is the best
+    </div>
+  }
+  onRequestClose={[Function]}
+  position="top"
+  title="My Popover"
+  trapFocus={false}
+  visible={true}
+>
+  <p>
+    render around me
+  </p>
+</Popover>
+`;
+
+exports[`Popover Component should render right 1`] = `
+<Popover
+  content={
+    <div>
+      Popover content is the best
+    </div>
+  }
+  onRequestClose={[Function]}
+  position="right"
+  title="My Popover"
+  trapFocus={false}
+  visible={true}
+>
+  <p>
+    render around me
+  </p>
+</Popover>
+`;
+
+exports[`Popover Component should render right aligned 1`] = `
+<Popover
+  align="right"
+  content={
+    <div>
+      Popover content is the best
+    </div>
+  }
+  onRequestClose={[Function]}
+  position="top"
+  title="My Popover"
+  trapFocus={false}
+  visible={true}
+>
+  <p>
+    render around me
+  </p>
+</Popover>
+`;
+
+exports[`Popover Component should render top 1`] = `
+<Popover
+  content={
+    <div>
+      Popover content is the best
+    </div>
+  }
+  onRequestClose={[Function]}
+  position="right"
+  title="My Popover"
+  trapFocus={false}
+  visible={true}
+>
+  <p>
+    render around me
+  </p>
+</Popover>
+`;
+
+exports[`Popover Component should render top aligned 1`] = `
+<Popover
+  align="top"
+  content={
+    <div>
+      Popover content is the best
+    </div>
+  }
+  onRequestClose={[Function]}
+  position="left"
+  title="My Popover"
+  trapFocus={false}
+  visible={true}
+>
+  <p>
+    render around me
+  </p>
+</Popover>
+`;
+
+exports[`Popover Component should render without arrow 1`] = `
+<Popover
+  align="bottom"
+  content={
+    <div>
+      Popover content is the best
+    </div>
+  }
+  hideArrow={true}
+  onRequestClose={[Function]}
+  position="left"
+  title="My Popover"
+  trapFocus={false}
+  visible={true}
+>
+  <p>
+    render around me
+  </p>
+</Popover>
+`;

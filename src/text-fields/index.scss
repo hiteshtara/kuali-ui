@@ -1,0 +1,31 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+@include react-md-text-fields;
+
+.md-text-field-container {
+  .md-floating-label--floating,
+  .md-floating-label--active {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 500;
+  }
+}
+
+.kuali-text-field__hidden-icon {
+  .md-floating-label--icon-offset {
+    left: 0;
+  }
+
+  .md-text-field-icon + .md-text-field-divider-container {
+    margin-left: 0;
+  }
+
+  .md-text-field-message-container--left-icon-offset {
+    padding-left: 0;
+  }
+}

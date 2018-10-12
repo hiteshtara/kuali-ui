@@ -1,0 +1,704 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField Component should render default 1`] = `
+<TextField
+  fullWidth={true}
+  leftIconStateful={true}
+  lineDirection="left"
+  passwordIcon={
+    <FontIcon
+      iconClassName="material-icons"
+    >
+      remove_red_eye
+    </FontIcon>
+  }
+  rightIconStateful={true}
+  type="text"
+>
+  <TextField
+    className="kuali-text-field__hidden-icon"
+    fullWidth={true}
+    leftIcon={
+      <Icon
+        aria-hidden={true}
+        iconClassName="material-icons"
+        name="report_problem"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+        variant="error"
+      />
+    }
+    leftIconStateful={true}
+    lineDirection="left"
+    passwordIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        remove_red_eye
+      </FontIcon>
+    }
+    rightIconStateful={true}
+    type="text"
+  >
+    <div
+      className="md-text-field-container md-full-width md-text-field-container--input kuali-text-field__hidden-icon"
+      onClick={[Function]}
+    >
+      <FloatingLabel
+        active={false}
+        error={false}
+        floating={false}
+        iconOffset={true}
+        key="label"
+      />
+      <div
+        className="md-text-field-icon-container"
+        key="icon-divider"
+      >
+        <Icon
+          aria-hidden={true}
+          className="md-text-field-icon md-text-field-icon--positioned"
+          error={false}
+          iconClassName="material-icons"
+          key="icon-left"
+          name="report_problem"
+          primary={false}
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+          variant="error"
+        >
+          <FontIcon
+            aria-hidden={true}
+            className="kuali-icon kuali-icon--error md-text-field-icon md-text-field-icon--positioned"
+            error={false}
+            iconClassName="material-icons"
+            primary={false}
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+          >
+            <i
+              aria-hidden={true}
+              className="md-icon material-icons kuali-icon kuali-icon--error md-text-field-icon md-text-field-icon--positioned"
+              style={
+                Object {
+                  "display": "none",
+                }
+              }
+            >
+              report_problem
+            </i>
+          </FontIcon>
+        </Icon>
+        <div
+          className="md-text-field-divider-container md-text-field-divider-container--grow"
+          key="divider-container"
+        >
+          <InputField
+            className=""
+            fullWidth={true}
+            inlineIndicator={false}
+            key="field"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+          >
+            <input
+              className="md-text-field md-text-field--margin md-full-width md-text"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </InputField>
+          <TextFieldDivider
+            active={false}
+            error={false}
+            key="text-divider"
+            lineDirection="left"
+          >
+            <Divider
+              className="md-divider--text-field md-divider--expand-from-left"
+            >
+              <hr
+                className="md-divider md-divider--text-field md-divider--expand-from-left"
+              />
+            </Divider>
+          </TextFieldDivider>
+        </div>
+      </div>
+      <TextFieldMessage
+        active={false}
+        currentLength={0}
+        error={false}
+        key="message"
+        leftIcon={true}
+        rightIcon={false}
+      />
+    </div>
+  </TextField>
+</TextField>
+`;
+
+exports[`TextField Component should render with info icon 1`] = `
+<TextField
+  fullWidth={true}
+  leftIcon={
+    <Icon
+      aria-hidden={true}
+      iconClassName="material-icons"
+      name="info"
+      variant="default"
+    />
+  }
+  leftIconStateful={true}
+  lineDirection="left"
+  passwordIcon={
+    <FontIcon
+      iconClassName="material-icons"
+    >
+      remove_red_eye
+    </FontIcon>
+  }
+  rightIconStateful={true}
+  type="text"
+>
+  <TextField
+    className=""
+    fullWidth={true}
+    leftIcon={
+      <Icon
+        aria-hidden={true}
+        iconClassName="material-icons"
+        name="info"
+        variant="default"
+      />
+    }
+    leftIconStateful={true}
+    lineDirection="left"
+    passwordIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        remove_red_eye
+      </FontIcon>
+    }
+    rightIconStateful={true}
+    type="text"
+  >
+    <div
+      className="md-text-field-container md-full-width md-text-field-container--input"
+      onClick={[Function]}
+    >
+      <FloatingLabel
+        active={false}
+        error={false}
+        floating={false}
+        iconOffset={true}
+        key="label"
+      />
+      <div
+        className="md-text-field-icon-container"
+        key="icon-divider"
+      >
+        <Icon
+          aria-hidden={true}
+          className="md-text-field-icon md-text-field-icon--positioned"
+          error={false}
+          iconClassName="material-icons"
+          key="icon-left"
+          name="info"
+          primary={false}
+          variant="default"
+        >
+          <FontIcon
+            aria-hidden={true}
+            className="kuali-icon kuali-icon--default md-text-field-icon md-text-field-icon--positioned"
+            error={false}
+            iconClassName="material-icons"
+            primary={false}
+          >
+            <i
+              aria-hidden={true}
+              className="md-icon material-icons kuali-icon kuali-icon--default md-text-field-icon md-text-field-icon--positioned"
+            >
+              info
+            </i>
+          </FontIcon>
+        </Icon>
+        <div
+          className="md-text-field-divider-container md-text-field-divider-container--grow"
+          key="divider-container"
+        >
+          <InputField
+            className=""
+            fullWidth={true}
+            inlineIndicator={false}
+            key="field"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+          >
+            <input
+              className="md-text-field md-text-field--margin md-full-width md-text"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </InputField>
+          <TextFieldDivider
+            active={false}
+            error={false}
+            key="text-divider"
+            lineDirection="left"
+          >
+            <Divider
+              className="md-divider--text-field md-divider--expand-from-left"
+            >
+              <hr
+                className="md-divider md-divider--text-field md-divider--expand-from-left"
+              />
+            </Divider>
+          </TextFieldDivider>
+        </div>
+      </div>
+      <TextFieldMessage
+        active={false}
+        currentLength={0}
+        error={false}
+        key="message"
+        leftIcon={true}
+        rightIcon={false}
+      />
+    </div>
+  </TextField>
+</TextField>
+`;
+
+exports[`TextField Component should render with leftIconStateful = true with error 1`] = `
+<TextField
+  error={true}
+  fullWidth={true}
+  leftIconStateful={false}
+  lineDirection="left"
+  passwordIcon={
+    <FontIcon
+      iconClassName="material-icons"
+    >
+      remove_red_eye
+    </FontIcon>
+  }
+  rightIconStateful={true}
+  type="text"
+>
+  <TextField
+    error={true}
+    fullWidth={true}
+    leftIcon={
+      <Icon
+        aria-hidden={true}
+        iconClassName="material-icons"
+        name="report_problem"
+        style={Object {}}
+        variant="error"
+      />
+    }
+    leftIconStateful={false}
+    lineDirection="left"
+    passwordIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        remove_red_eye
+      </FontIcon>
+    }
+    rightIconStateful={true}
+    type="text"
+  >
+    <div
+      className="md-text-field-container md-full-width md-text-field-container--input"
+      onClick={[Function]}
+    >
+      <FloatingLabel
+        active={false}
+        error={true}
+        floating={false}
+        iconOffset={true}
+        key="label"
+      />
+      <div
+        className="md-text-field-icon-container"
+        key="icon-divider"
+      >
+        <Icon
+          aria-hidden={true}
+          className="md-text-field-icon md-text-field-icon--positioned"
+          iconClassName="material-icons"
+          key="icon-left"
+          name="report_problem"
+          style={Object {}}
+          variant="error"
+        >
+          <FontIcon
+            aria-hidden={true}
+            className="kuali-icon kuali-icon--error md-text-field-icon md-text-field-icon--positioned"
+            iconClassName="material-icons"
+            style={Object {}}
+          >
+            <i
+              aria-hidden={true}
+              className="md-icon material-icons kuali-icon kuali-icon--error md-text-field-icon md-text-field-icon--positioned"
+              style={Object {}}
+            >
+              report_problem
+            </i>
+          </FontIcon>
+        </Icon>
+        <div
+          className="md-text-field-divider-container md-text-field-divider-container--grow"
+          key="divider-container"
+        >
+          <InputField
+            className=""
+            fullWidth={true}
+            inlineIndicator={false}
+            key="field"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+          >
+            <input
+              className="md-text-field md-text-field--margin md-full-width md-text"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </InputField>
+          <TextFieldDivider
+            active={false}
+            error={true}
+            key="text-divider"
+            lineDirection="left"
+          >
+            <Divider
+              className="md-divider--text-field md-divider--expand-from-left md-divider--text-field-error"
+            >
+              <hr
+                className="md-divider md-divider--text-field md-divider--expand-from-left md-divider--text-field-error"
+              />
+            </Divider>
+          </TextFieldDivider>
+        </div>
+      </div>
+      <TextFieldMessage
+        active={false}
+        currentLength={0}
+        error={true}
+        key="message"
+        leftIcon={true}
+        rightIcon={false}
+      />
+    </div>
+  </TextField>
+</TextField>
+`;
+
+exports[`TextField Component should render with leftIconStateful = true without error 1`] = `
+<TextField
+  fullWidth={true}
+  leftIconStateful={false}
+  lineDirection="left"
+  passwordIcon={
+    <FontIcon
+      iconClassName="material-icons"
+    >
+      remove_red_eye
+    </FontIcon>
+  }
+  rightIconStateful={true}
+  type="text"
+>
+  <TextField
+    className="kuali-text-field__hidden-icon"
+    fullWidth={true}
+    leftIcon={
+      <Icon
+        aria-hidden={true}
+        iconClassName="material-icons"
+        name="report_problem"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+        variant="error"
+      />
+    }
+    leftIconStateful={false}
+    lineDirection="left"
+    passwordIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        remove_red_eye
+      </FontIcon>
+    }
+    rightIconStateful={true}
+    type="text"
+  >
+    <div
+      className="md-text-field-container md-full-width md-text-field-container--input kuali-text-field__hidden-icon"
+      onClick={[Function]}
+    >
+      <FloatingLabel
+        active={false}
+        error={false}
+        floating={false}
+        iconOffset={true}
+        key="label"
+      />
+      <div
+        className="md-text-field-icon-container"
+        key="icon-divider"
+      >
+        <Icon
+          aria-hidden={true}
+          className="md-text-field-icon md-text-field-icon--positioned"
+          iconClassName="material-icons"
+          key="icon-left"
+          name="report_problem"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+          variant="error"
+        >
+          <FontIcon
+            aria-hidden={true}
+            className="kuali-icon kuali-icon--error md-text-field-icon md-text-field-icon--positioned"
+            iconClassName="material-icons"
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+          >
+            <i
+              aria-hidden={true}
+              className="md-icon material-icons kuali-icon kuali-icon--error md-text-field-icon md-text-field-icon--positioned"
+              style={
+                Object {
+                  "display": "none",
+                }
+              }
+            >
+              report_problem
+            </i>
+          </FontIcon>
+        </Icon>
+        <div
+          className="md-text-field-divider-container md-text-field-divider-container--grow"
+          key="divider-container"
+        >
+          <InputField
+            className=""
+            fullWidth={true}
+            inlineIndicator={false}
+            key="field"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+          >
+            <input
+              className="md-text-field md-text-field--margin md-full-width md-text"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </InputField>
+          <TextFieldDivider
+            active={false}
+            error={false}
+            key="text-divider"
+            lineDirection="left"
+          >
+            <Divider
+              className="md-divider--text-field md-divider--expand-from-left"
+            >
+              <hr
+                className="md-divider md-divider--text-field md-divider--expand-from-left"
+              />
+            </Divider>
+          </TextFieldDivider>
+        </div>
+      </div>
+      <TextFieldMessage
+        active={false}
+        currentLength={0}
+        error={false}
+        key="message"
+        leftIcon={true}
+        rightIcon={false}
+      />
+    </div>
+  </TextField>
+</TextField>
+`;
+
+exports[`TextField Component should render with report_problem icon 1`] = `
+<TextField
+  error={true}
+  fullWidth={true}
+  leftIcon={
+    <Icon
+      aria-hidden={true}
+      iconClassName="material-icons"
+      name="info"
+      variant="default"
+    />
+  }
+  leftIconStateful={true}
+  lineDirection="left"
+  passwordIcon={
+    <FontIcon
+      iconClassName="material-icons"
+    >
+      remove_red_eye
+    </FontIcon>
+  }
+  rightIconStateful={true}
+  type="text"
+>
+  <TextField
+    error={true}
+    fullWidth={true}
+    leftIcon={
+      <Icon
+        aria-hidden={true}
+        iconClassName="material-icons"
+        name="report_problem"
+        style={Object {}}
+        variant="error"
+      />
+    }
+    leftIconStateful={true}
+    lineDirection="left"
+    passwordIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        remove_red_eye
+      </FontIcon>
+    }
+    rightIconStateful={true}
+    type="text"
+  >
+    <div
+      className="md-text-field-container md-full-width md-text-field-container--input"
+      onClick={[Function]}
+    >
+      <FloatingLabel
+        active={false}
+        error={true}
+        floating={false}
+        iconOffset={true}
+        key="label"
+      />
+      <div
+        className="md-text-field-icon-container"
+        key="icon-divider"
+      >
+        <Icon
+          aria-hidden={true}
+          className="md-text-field-icon md-text-field-icon--positioned"
+          error={true}
+          iconClassName="material-icons"
+          key="icon-left"
+          name="report_problem"
+          primary={false}
+          style={Object {}}
+          variant="error"
+        >
+          <FontIcon
+            aria-hidden={true}
+            className="kuali-icon kuali-icon--error md-text-field-icon md-text-field-icon--positioned"
+            error={true}
+            iconClassName="material-icons"
+            primary={false}
+            style={Object {}}
+          >
+            <i
+              aria-hidden={true}
+              className="md-icon material-icons md-text--error kuali-icon kuali-icon--error md-text-field-icon md-text-field-icon--positioned"
+              style={Object {}}
+            >
+              report_problem
+            </i>
+          </FontIcon>
+        </Icon>
+        <div
+          className="md-text-field-divider-container md-text-field-divider-container--grow"
+          key="divider-container"
+        >
+          <InputField
+            className=""
+            fullWidth={true}
+            inlineIndicator={false}
+            key="field"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+          >
+            <input
+              className="md-text-field md-text-field--margin md-full-width md-text"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              type="text"
+            />
+          </InputField>
+          <TextFieldDivider
+            active={false}
+            error={true}
+            key="text-divider"
+            lineDirection="left"
+          >
+            <Divider
+              className="md-divider--text-field md-divider--expand-from-left md-divider--text-field-error"
+            >
+              <hr
+                className="md-divider md-divider--text-field md-divider--expand-from-left md-divider--text-field-error"
+              />
+            </Divider>
+          </TextFieldDivider>
+        </div>
+      </div>
+      <TextFieldMessage
+        active={false}
+        currentLength={0}
+        error={true}
+        key="message"
+        leftIcon={true}
+        rightIcon={false}
+      />
+    </div>
+  </TextField>
+</TextField>
+`;

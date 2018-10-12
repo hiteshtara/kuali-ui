@@ -1,0 +1,22 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+@import "./config.scss",
+  "./document-layout/index.scss",
+  "./grayjoy-layout/index.scss",
+  "./jump-to-menu/index.scss",
+  "./layout-helpers/index.scss",
+  "./sidebar/index.scss",
+  "./standard-layout/index.scss",
+  "./title-bar/index.scss";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}

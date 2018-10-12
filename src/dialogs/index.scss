@@ -1,0 +1,124 @@
+$md-dialog-overlay-z-index: $z-dialog;
+
+@include react-md-dialogs;
+
+$dialog-vert-padding: 15px;
+$dialog-horz-padding: 15px;
+$dialog-padding: $dialog-vert-padding $dialog-horz-padding;
+$dialog-min-width: 550px;
+
+.kuali-dialog.md-dialog--centered {
+  position: static;
+  top: auto;
+  left: auto;
+  transform: none;
+  border-radius: 2px;
+}
+
+.kuali-dialog.md-dialog--centered-enter {
+  transform: none;
+
+  &.kuali-dialog .md-dialog--centered-enter-active {
+    transform: none;
+  }
+}
+
+.kuali-dialog.md-dialog--centered-leave {
+  transform: none;
+
+  &.md-dialog--centered-leave-active {
+    transform: none;
+  }
+}
+
+.kuali-dialog-inner {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  max-height: calc(100vh - 48px);
+  max-width: calc(100vw - 80px);
+  min-width: $dialog-min-width;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.kuali-dialog {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-height: inherit;
+  max-width: inherit;
+  overflow: auto;
+  width: auto;
+}
+
+.kuali-dialog-section {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.kuali-dialog--header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEE;
+  color: #555;
+  padding: 0 0;
+}
+
+.kuali-dialog--header---title {
+  flex: 1 1 auto;
+  font-size: 20px;
+  color: inherit;
+  margin: 0;
+  line-height: 1;
+  font-weight: 700;
+  margin-left: 13px;
+}
+
+.kuali-dialog--header---close {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.md-dialog-footer .kuali-button {
+  min-width: 100px;
+  padding-left: 0;
+  padding-right: 9px;
+}
+
+.kuali-dialog--content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  padding: $dialog-padding;
+  min-height: 150px;
+}
+
+.kuali-dialog .md-dialog-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: $dialog-padding;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #555;
+  justify-content: space-between;
+}
+
+.kuali-dialog--actions-center .md-dialog-footer {
+  justify-content: space-between;
+}
+
+.kuali-dialog--actions-right .md-dialog-footer {
+  justify-content: flex-end;
+}
+
+.kuali-dialog--actions-left .md-dialog-footer {
+  justify-content: flex-start;
+}

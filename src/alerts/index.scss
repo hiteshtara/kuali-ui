@@ -1,0 +1,193 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+.kuali-alert--container {
+  display: flex;
+  overflow: auto;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 10px);
+  max-width: 700px;
+  min-width: 222px;
+  max-height: 250px;
+  background-color: #FFF;
+  border: solid 3px $kuali-error-color;
+  border-radius: 3px;
+  transition: all 0.65s;
+
+  .kuali-alert--icon---box {
+    float: left;
+    width: 60px;
+
+    i {
+      font-size: 30px;
+      margin: 10px 15px 10px 15px;
+    }
+  }
+
+  .kuali-alert--data---box {
+    float: left;
+    width: calc(100% - 100px);
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: $neutral-dark;
+    margin: 12px 0 3px 0;
+    line-height: 25px;
+    animation: motionBlurTextDown 1s linear;
+  }
+
+  p {
+    font-size: 15px;
+    color: $neutral-medium;
+    margin: 0 0 15px 0;
+    max-height: 133px;
+    padding-top: 2px;
+    overflow: auto;
+    animation: motionBlurTextDown 1s linear;
+  }
+
+  .kuali-alert--header---close {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    overflow: hidden;
+
+    button {
+      padding: 7px 4px 5px 4px;
+      margin: 10px 15px 10px 20px;
+    }
+  }
+}
+
+.kuali-alert--type---info {
+  border-color: $kuali-info-color;
+}
+
+.kuali-alert--type---success {
+  border-color: $kuali-success-color;
+}
+
+.kuali-alert--type---warning {
+  border-color: $kuali-warning-color;
+}
+
+.kuali-alert--type---error {
+  border-color: $kuali-error-color;
+}
+
+.kuali-alert-appear {
+  animation: kualiAlertPopdown 0.65s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.kuali-alert-exit {
+  animation: kualiAlertPopUp 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 500px) {
+  .kuali-alert--container {
+    .kuali-alert--icon---box {
+      width: 44px;
+
+      i {
+        font-size: 20px;
+        margin: 10px 12px 10px 12px;
+      }
+    }
+
+    .kuali-alert--data---box {
+      float: left;
+      width: calc(100% - 74px);
+    }
+
+    h1 {
+      line-height: 17px;
+      font-size: 15px;
+      margin: 12px 0 5px 0;
+    }
+
+    p {
+      padding-top: 0;
+      font-size: 12px;
+      max-height: 145px;
+    }
+
+    .kuali-alert--header---close {
+      width: 44px;
+      height: 44px;
+
+      button {
+        padding: 5px 3px 4px 3px;
+        margin: 9px 5px 1px 10px;
+
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* pop down animation */
+@keyframes kualiAlertPopdown {
+  0% {
+    top: -200px;
+  }
+
+  70% {
+    top: 5px;
+  }
+
+  80% {
+    top: 0;
+  }
+
+  100% {
+    top: 5px;
+  }
+}
+
+@keyframes motionBlurTextDown {
+  0% {
+    text-shadow: 0 -4px 4px rgba(64, 81, 92, 0);
+  }
+
+  50% {
+    text-shadow: 0 -4px 4px rgba(64, 81, 92, 0);
+  }
+
+  100% {
+    text-shadow: 0 0 0 rgba(64, 81, 92, 0);
+  }
+}
+
+@keyframes kualiAlertPopUp {
+  0% {
+    top: 5px;
+  }
+
+  20% {
+    top: 10px;
+  }
+
+  100% {
+    top: -200px;
+  }
+}

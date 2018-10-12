@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Component should render 1`] = `
+<FontIcon
+  aria-hidden={true}
+  aria-label="add"
+  className="kuali-icon kuali-icon--default"
+  iconClassName="material-icons"
+>
+  add
+</FontIcon>
+`;

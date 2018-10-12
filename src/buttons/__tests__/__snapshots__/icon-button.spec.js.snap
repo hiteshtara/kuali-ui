@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton Component should render 1`] = `
+<withInk(withTooltip(Button))
+  block={false}
+  component="button"
+  icon={true}
+  iconBefore={true}
+  size="default"
+  type="submit"
+  variant="default"
+/>
+`;

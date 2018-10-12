@@ -1,0 +1,74 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+@include react-md-pickers;
+
+.md-picker-header {
+  background-color: #E0E0E0;
+}
+
+.md-picker-text {
+  color: #333;
+}
+
+.kuali-time-picker {
+  .md-time-periods {
+    .md-picker-text {
+      opacity: 0.5;
+    }
+
+    .md-picker-text--active {
+      opacity: 1;
+    }
+  }
+}
+
+.kuali-date-picker {
+  .md-calendar-month {
+    .md-calendar-date {
+      width: calc(99% / 7);
+    }
+  }
+
+  .md-calendar-header {
+    .md-calendar-dows {
+      .md-calendar-date {
+        width: calc(99% / 7);
+      }
+    }
+  }
+
+  .md-picker-header {
+    .md-picker-control:last-child {
+      h4 {
+        transition: color 0s;
+      }
+
+      &:hover h4,
+      &:focus h4 {
+        color: palette(glacier);
+      }
+    }
+
+    .md-picker-control:first-child {
+      @extend .kuali-button;
+      @extend .kuali-button--size__small;
+      @extend .kuali-button--raised;
+
+      margin-bottom: 10px;
+
+      &.md-picker-text--active {
+        @extend .kuali-button--info;
+      }
+
+      &:hover, &:focus {
+        background-color: #DFDFDF;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs Component should render 1`] = `
+<TabsContainer
+  className="kuali-tabs-container"
+  component="section"
+  defaultTabIndex={0}
+  headerZDepth={1}
+  slideHeightProp="height"
+>
+  <Tabs
+    component="ul"
+    defaultTabIndex={0}
+    nextIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        keyboard_arrow_right
+      </FontIcon>
+    }
+    overflowMenuIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        arrow_drop_down
+      </FontIcon>
+    }
+    overflowMenuLabel="More"
+    previousIcon={
+      <FontIcon
+        iconClassName="material-icons"
+      >
+        keyboard_arrow_left
+      </FontIcon>
+    }
+    tabId="tab"
+  >
+    <Tab
+      activeClassName="md-tab--active"
+      component="li"
+      inactiveClassName="md-tab--inactive"
+      label="First"
+    >
+      <h3>
+        First Tab
+      </h3>
+      <p>
+        tab content
+      </p>
+    </Tab>
+    <Tab
+      activeClassName="md-tab--active"
+      component="li"
+      inactiveClassName="md-tab--inactive"
+      label="Second"
+    >
+      <h3>
+        Second Tab
+      </h3>
+      <p>
+        tab content
+      </p>
+    </Tab>
+  </Tabs>
+</TabsContainer>
+`;

@@ -1,0 +1,108 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+$header-height: 55px;
+
+.layout__header {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  min-height: $header-height;
+}
+
+.header__title {
+  flex: 0 0 auto;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 15px;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  top: 3px;
+  margin-right: auto;
+}
+
+.header__brand-logo-container {
+  flex: 0 0 75px;
+  margin: 0 15px 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header__brand-logo {
+  height: 30px;
+  max-width: 250px;
+}
+
+.header__brand-divider {
+  flex: 0 0 1px;
+  padding: 20px 0;
+  margin: 0;
+  background: #CCC;
+}
+
+.header__menu-container {
+  flex: 0 0 auto;
+  display: flex;
+  height: $header-height;
+}
+
+.header__user-details {
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  height: 100%;
+}
+
+.header__user-name {
+  display: none;
+  margin: 0;
+}
+
+@include media(">=desktop") {
+  .header__title {
+    font-size: 18px;
+    flex-grow: 1;
+  }
+
+  .header__brand-logo-container {
+    margin-left: auto;
+    margin-right: auto;
+    border-right: initial;
+    padding-right: initial;
+    flex-grow: 1;
+  }
+
+  .header__brand-divider {
+    display: none;
+  }
+
+  .header__avatar {
+    margin-right: 10px;
+  }
+
+  .header__menu-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  .header__user-name {
+    display: block;
+  }
+}
+
+.avatar {
+  background-color: #CCC;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+}

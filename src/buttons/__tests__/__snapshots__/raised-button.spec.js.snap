@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RaisedButton Component should render 1`] = `
+<withInk(withTooltip(Button))
+  block={false}
+  component="button"
+  icon={false}
+  iconBefore={true}
+  raised={true}
+  size="default"
+  type="submit"
+  variant="default"
+/>
+`;

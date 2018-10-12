@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseButton Component should render 1`] = `
+<withTooltip(Button)
+  block={false}
+  component="button"
+  icon={false}
+  iconBefore={true}
+  ink={
+    <InkContainer
+      className={undefined}
+      disabledInteractions={undefined}
+      inkClassName={undefined}
+      inkStyle={undefined}
+      pulse={undefined}
+      style={undefined}
+      transitionEnterTimeout={450}
+      transitionLeaveTimeout={300}
+      transitionOverlap={150}
+      waitForInkTransition={undefined}
+    />
+  }
+  size="default"
+  type="submit"
+  variant="default"
+/>
+`;
+
+exports[`BaseButton Component should render with a string icon name 1`] = `
+<withTooltip(Button)
+  block={false}
+  component="button"
+  icon={false}
+  iconBefore={true}
+  ink={
+    <InkContainer
+      className={undefined}
+      disabledInteractions={undefined}
+      inkClassName={undefined}
+      inkStyle={undefined}
+      pulse={undefined}
+      style={undefined}
+      transitionEnterTimeout={450}
+      transitionLeaveTimeout={300}
+      transitionOverlap={150}
+      waitForInkTransition={undefined}
+    />
+  }
+  size="default"
+  type="submit"
+  variant="default"
+>
+  done
+</withTooltip(Button)>
+`;
+
+exports[`BaseButton Component should render with an Icon 1`] = `
+<withTooltip(Button)
+  block={false}
+  component="button"
+  icon={false}
+  iconBefore={true}
+  ink={
+    <InkContainer
+      className={undefined}
+      disabledInteractions={undefined}
+      inkClassName={undefined}
+      inkStyle={undefined}
+      pulse={undefined}
+      style={undefined}
+      transitionEnterTimeout={450}
+      transitionLeaveTimeout={300}
+      transitionOverlap={150}
+      waitForInkTransition={undefined}
+    />
+  }
+  size="default"
+  type="submit"
+  variant="default"
+>
+  <Icon
+    aria-hidden={true}
+    iconClassName="material-icons"
+    name="done"
+    variant="default"
+  />
+</withTooltip(Button)>
+`;

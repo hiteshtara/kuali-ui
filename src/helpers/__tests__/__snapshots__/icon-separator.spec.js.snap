@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconSeparator Component should render a button 1`] = `
+<div
+  className="md-icon-separator"
+>
+  <span
+    className="md-icon-text"
+  >
+    label
+  </span>
+  <Icon
+    aria-hidden={true}
+    iconClassName="material-icons"
+    name="cancel"
+    variant="default"
+  />
+</div>
+`;

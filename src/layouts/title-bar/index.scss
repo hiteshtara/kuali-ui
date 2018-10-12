@@ -1,0 +1,74 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+$title-bar-bg-color: #558DD8;
+
+.title-bar {
+  display: flex;
+  min-height: 50px;
+}
+
+.title-bar--withNav {
+  padding-left: 0;
+}
+
+.title-bar__inner {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-color: $title-bar-bg-color;
+  color: #FFF;
+  padding: $layout-vert-padding/3 $layout-hoz-padding;
+}
+
+.title-bar__nav-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  flex: 0 0 auto;
+  background-color: #394D5A;
+  color: rgba(#FFF, 0.25);
+  padding: 0 15px;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: rgba(#FFF, 1);
+  }
+
+  .kuali-icon {
+    color: inherit;
+  }
+
+  &:focus {
+    background-color: darken($title-bar-bg-color, 80);
+  }
+
+  @include media(">=desktop") {
+    display: none;
+  }
+}
+
+.title-bar__heading {
+  flex: 1;
+  color: inherit;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.title-bar__button-back {
+  order: -1;
+  flex: 0 1 auto;
+  margin-right: $layout-hoz-padding/2;
+}

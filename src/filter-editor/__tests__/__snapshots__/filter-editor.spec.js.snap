@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StandardLayout Component should render 1`] = `
+<Paper
+  className="filter-editor"
+  component="div"
+  zDepth={1}
+>
+  <Content
+    className=""
+    tag="div"
+  >
+    <div
+      className="filter-editor__header"
+    >
+      <Heading
+        className="filter-editor__title"
+        tag="h3"
+      >
+        Filter Rules
+      </Heading>
+    </div>
+    <Rules
+      className=""
+    />
+    <div
+      className="filter-editor__actions"
+    >
+      <RaisedButton
+        label="Add Rule"
+        onClick={[Function]}
+      >
+        <Icon
+          aria-hidden={true}
+          iconClassName="material-icons"
+          name="add_circle"
+          variant="success"
+        />
+      </RaisedButton>
+    </div>
+  </Content>
+  <IconButton
+    className="filter-editor__close"
+    onClick={[Function]}
+    variant="plain"
+  >
+    <Icon
+      aria-hidden={true}
+      iconClassName="material-icons"
+      name="clear"
+      variant="default"
+    />
+  </IconButton>
+</Paper>
+`;

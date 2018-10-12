@@ -1,0 +1,128 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+$kuali-form-border-color: #DDD;
+$kuali-form-border: 1px solid #DDD;
+$kuali-form-label-color: rgba(0, 0, 0, 0.54);
+$kuali-form-field-underline-color: #03A9F4;
+$kuali-form-padding-y: 10px;
+$kuali-form-padding-x: 15px;
+
+.kuali-form {
+  width: 100%;
+  margin-bottom: 0 auto;
+
+  .md-floating-label {
+    top: -12px;
+  }
+
+  .md-text-field--floating-margin {
+    margin-top: 25px;
+  }
+
+  .md-selection-control-group {
+    padding: 0;
+  }
+
+  .md-selection-control-label {
+    font-size: inherit;
+  }
+
+  .md-switch-track {
+    margin-left: 0;
+  }
+
+  .md-selection-control-container {
+    height: auto;
+    margin-top: 2px;
+
+    &.md-switch-container {
+      margin: 10px 0;
+    }
+
+    .md-btn--icon {
+      margin: 5px 5px 6px 0;
+      padding: 0;
+      height: 22px;
+      width: 22px;
+    }
+  }
+
+  .kuali-form--row,
+  .kuali-form__row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .kuali-form--cell,
+  .kuali-form__cell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: $kuali-form-padding-y $kuali-form-padding-x;
+    margin: 0;
+    flex: 1 0 200px;
+  }
+}
+
+.kuali-form--gridded {
+  background-color: #FFF;
+  border-bottom: $kuali-form-border;
+
+  .kuali-form--row,
+  .kuali-form__row {
+    border-right: $kuali-form-border;
+  }
+
+  .kuali-form--cell,
+  .kuali-form__cell {
+    border-top: $kuali-form-border;
+    border-left: $kuali-form-border;
+
+    .md-picker-container,
+    .md-menu-container,
+    .md-select-field,
+    .md-text-field-container {
+      position: static;
+    }
+
+    .md-text-field-message-container {
+      margin-top: 4px;
+    }
+
+    .md-floating-label {
+      top: -5px;
+      left: $kuali-form-padding-x;
+    }
+
+    .md-divider--text-field {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      margin: 0 0 -1px 0;
+
+      &:not(.md-divider--text-field-active):not(.md-divider--text-field-error) {
+        background-color: transparent;
+      }
+    }
+
+    .md-text-field-icon {
+      margin-bottom: 2px;
+    }
+  }
+
+  .kuali-form__cell--disabled {
+    background-color: #F3F3F3;
+
+    .kuali-label {
+      color: #999;
+    }
+  }
+}

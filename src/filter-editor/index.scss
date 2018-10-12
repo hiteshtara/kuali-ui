@@ -1,0 +1,67 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+// TODO: move styles to be stored with components
+
+@import "./config.scss",
+  "./components/column-selector/index.scss",
+  "./components/content/index.scss",
+  "./components/date-picker-button/index.scss",
+  "./components/delete-icon/index.scss",
+  "./components/footer/index.scss",
+  "./components/heading/index.scss",
+  "./components/operation/index.scss",
+  "./components/rules/index.scss",
+  "./components/rule/index.scss",
+  "./components/select-field-button/index.scss",
+  "./components/text-field-custom/index.scss",
+  "./components/time-field/index.scss";
+
+.filter-editor {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.filter-editor__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.filter-editor__title {
+  margin: 0 $filter-editor-hoz-padding 0 0;
+}
+
+.filter-editor__label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.filter-editor__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.filter-editor__actions {
+  display: flex;
+  flex-direction: row;
+}
+
+@include media(">=desktop") {
+  .filter-editor__create {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .filter-editor__create-label {
+    margin-bottom: 0;
+    flex: 0 1 auto;
+  }
+}

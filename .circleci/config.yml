@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/kuali-ui
+    docker:
+      - image: circleci/node:6
+      - image: circleci/mongo:3.2.20
+    steps:
+      - checkout
+      - run:
+          name: Authenticate npm
+          command: |
+            echo "//npm.kuali.co/:_authToken=\"$NPM_TOKEN\"" >> .npmrc
+            echo "@kuali:registry=https://npm.kuali.co/" >> .npmrc
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - run:
+          name: running tests
+          command: npm t
+      - store_artifacts:
+          path: coverage
+          destination: coverage

@@ -1,0 +1,31 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+$filter-editor-hoz-padding: 20px;
+$filter-editor-vert-padding: 20px;
+$filter-editor-padding: $filter-editor-vert-padding $filter-editor-hoz-padding;
+
+@mixin filter-editor-field {
+  background-color: #ECECEC;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 13px 15px;
+
+  .md-divider {
+    display: none;
+  }
+
+  .md-text-field {
+    margin: 0;
+  }
+
+  @include media(">=desktop") {
+    font-size: 13px;
+    padding: 11px 15px;
+  }
+}

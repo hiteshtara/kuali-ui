@@ -1,0 +1,146 @@
+$neutral-dark: rgb(65, 81, 92);
+$neutral-medium: rgb(122, 138, 143);
+$neutral: rgb(182, 193, 194);
+$neutral-light: rgb(227, 231, 234);
+
+$wintergreen: rgb(80, 177, 137);
+$frost: rgb(87, 199, 222);
+$glacier: rgb(70, 141, 203);
+$mint: rgb(108, 196, 89);
+$popsicle: rgb(139, 115, 185);
+
+$magma: rgb(200, 51, 151);
+$chili: rgb(228, 57, 53);
+$flare: rgb(239, 108, 05);
+$torch: rgb(247, 189, 27);
+
+$palettes: (
+  primary: (
+    100: rgb(202, 231, 219),
+    200: rgb(165, 214, 194),
+    300: rgb(139, 203, 176),
+    400: rgb(121, 195, 164),
+    500: $wintergreen
+  ),
+  secondary: (
+    100: rgb(227, 150, 194),
+    200: rgb(213, 99, 166),
+    300: rgb(206, 74, 155),
+    400: rgb(203, 62, 150),
+    500: $magma
+  ),
+  neutral-dark: (
+    100: rgb(197, 202, 205),
+    200: rgb(157, 165, 170),
+    300: rgb(129, 139, 146),
+    400: rgb(109, 121, 129),
+    500: $neutral-dark
+  ),
+  neutral-medium: (
+    100: rgb(216, 219, 221),
+    200: rgb(189, 194, 197),
+    300: rgb(170, 176, 180),
+    400: rgb(157, 164, 169),
+    500: $neutral-medium
+  ),
+  neutral: (
+    100: rgb(233, 236, 236),
+    200: rgb(218, 223, 223),
+    300: rgb(207, 214, 214),
+    400: rgb(199, 207, 207),
+    500: $neutral
+  ),
+  neutral-light: (
+    100: rgb(246, 247, 248),
+    200: rgb(240, 242, 243),
+    300: rgb(235, 238, 240),
+    400: rgb(232, 235, 238),
+    500: $neutral-light
+  ),
+  wintergreen: (
+    100: rgb(202, 231, 219),
+    200: rgb(165, 214, 194),
+    300: rgb(139, 203, 176),
+    400: rgb(121, 195, 164),
+    500: $wintergreen
+  ),
+  frost: (
+    100: rgb(213, 237, 244),
+    200: rgb(184, 224, 236),
+    300: rgb(163, 215, 231),
+    400: rgb(149, 209, 227),
+    500: $frost
+  ),
+  glacier: (
+    100: rgb(204, 220, 237),
+    200: rgb(168, 196, 224),
+    300: rgb(143, 179, 215),
+    400: rgb(126, 167, 209),
+    500: $glacier
+  ),
+  mint: (
+    100: rgb(217, 236, 209),
+    200: rgb(190, 223, 177),
+    300: rgb(172, 214, 155),
+    400: rgb(159, 207, 139),
+    500: $mint
+  ),
+  popsicle: (
+    100: rgb(218, 213, 232),
+    200: rgb(192, 184, 216),
+    300: rgb(174, 163, 205),
+    400: rgb(161, 149, 197),
+    500: $popsicle
+  ),
+  magma: (
+    100: rgb(227, 150, 194),
+    200: rgb(213, 99, 166),
+    300: rgb(206, 74, 155),
+    400: rgb(203, 62, 150),
+    500: $magma
+  ),
+  chili: (
+    100: rgb(241, 200, 197),
+    200: rgb(231, 162, 157),
+    300: rgb(224, 135, 129),
+    400: rgb(219, 116, 109),
+    500: $chili
+  ),
+  flare: (
+    100: rgb(228, 201, 157),
+    200: rgb(217, 169, 107),
+    300: rgb(215, 149, 79),
+    400: rgb(215, 137, 65),
+    500: $flare
+  ),
+  torch: (
+    100: rgb(250, 235, 199),
+    200: rgb(246, 221, 160),
+    300: rgb(244, 211, 133),
+    400: rgb(242, 204, 114),
+    500: $torch
+  )
+);
+
+$kuali-grey: #E0E0E0;
+$kuali-dark-grey: #37474F;
+
+$kuali-error-color: palette(chili);
+$kuali-inactive-color: palette(neutral-light);
+$kuali-info-color: palette(glacier);
+$kuali-success-color: palette(mint);
+$kuali-warning-color: palette(torch);
+
+// DEPRECATED. Leave here for backwards compatibility and css export
+$colorExports: (
+  --kuali-light-blue: $frost,
+  --kuali-blue: $glacier,
+  --kuali-pink: $magma,
+  --kuali-yellow: $torch,
+  --kuali-green: $wintergreen,
+  --kuali-purple: $popsicle,
+  --kuali-orange: $flare,
+  --kuali-red: $chili,
+  --kuali-grey: $kuali-grey,
+  --kuali-dark-grey: $kuali-dark-grey
+);

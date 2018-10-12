@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label Component should render 1`] = `
+<label
+  className="kuali-label"
+>
+  text
+</label>
+`;

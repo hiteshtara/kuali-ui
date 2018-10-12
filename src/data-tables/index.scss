@@ -1,0 +1,13 @@
+$md-data-table-header-font-size: 14px;
+$md-data-table-header-height: 47px;
+
+@include react-md-data-tables;
+
+.md-table-header {
+  background-color: #F0F0F0;
+  font-weight: bold;
+}
+
+.md-table-column--header {
+  font-weight: bold;
+}

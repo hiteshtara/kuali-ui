@@ -1,0 +1,153 @@
+{
+  "name": "@kuali/kuali-ui",
+  "version": "4.19.2",
+  "description": "Kuali UI elements",
+  "publishConfig": {
+    "registry": "https://npm.kuali.co"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run build:colors && npm run build:js && npm run build:css && npm run prefix",
+    "build:colors": "node-sass src/colors/export.css lib/colors.css",
+    "build:css": "node-sass --output-style compressed --importer=node_modules/node-sass-tilde-importer src/kuali.scss lib/kuali-ui.min.css",
+    "build:js": "babel src --copy-files --out-dir lib --ignore __stories__,__tests__,README.md",
+    "format:js": "yarn format:js:file \"src/**/*.js\"",
+    "format:js:file": "prettier-eslint --bracket-spacing true --semi false --write $1",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lint:js:file": "eslint $1",
+    "lint:js": "eslint .",
+    "lint:style": "stylelint \"**/*.scss\" --syntax scss",
+    "lint:style:file": "stylelint $1 --syntax scss",
+    "onlymaster": "if [ \"$(git rev-parse --abbrev-ref HEAD)\" != \"master\" ]; then echo 'You can only publish from the master branch. You should also be a core team member' && exit 1; fi",
+    "precommit": "lint-staged && npm test",
+    "prepublishOnly": "npm run onlymaster && npm test && npm run build",
+    "postpublish": "git push --tags",
+    "prefix": "postcss --use autoprefixer -r lib/kuali-ui.min.css",
+    "storybook:start": "start-storybook -p 9001",
+    "storybook:compile": "build-storybook -o docs",
+    "storybook:publish": "npm run storybook:compile && aws s3 --profile kuali-cor cp docs/ s3://cor-kuali-ui --recursive --acl public-read --exclude .DS_Store",
+    "test": "jest --runInBand",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage",
+    "test:css": "backstop test",
+    "test:css:update": "backstop reference",
+    "watch": "babel src --copy-files --out-dir lib --watch"
+  },
+  "jest": {
+    "testURL": "http://localhost/",
+    "setupFiles": [
+      "./.jest/setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
+  "lint-staged": {
+    "{!(docs|node_modules)/*/*.js,!(docs|node_modules)/**/*.js}": [
+      "npm run format:js:file",
+      "git add",
+      "npm run lint:js:file"
+    ],
+    "*.scss": [
+      "npm run lint:style:file"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KualiCo/kuali-ui.git"
+  },
+  "author": "Kuali",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/KualiCo/kuali-ui/issues"
+  },
+  "homepage": "https://github.com/KualiCo/kuali-ui#readme",
+  "peerDependencies": {
+    "prop-types": ">= ^15.0.0",
+    "react": ">= 15.0.0",
+    "react-dom": ">= 15.0.0",
+    "react-md": ">= 1.3.0",
+    "react-transition-group": ">= 2.x"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "core-decorators": "0.20.0",
+    "focus-trap-react": "~3.1.2",
+    "include-media": "1.4.9",
+    "uuid": "~3.3.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "~3.4.1",
+    "@storybook/addon-links": "~3.4.1",
+    "@storybook/addon-options": "~3.4.1",
+    "@storybook/addons": "~3.4.1",
+    "@storybook/react": "~3.4.1",
+    "autoprefixer": "^8.1.0",
+    "axe-core": "^3.0.0",
+    "babel-cli": "~6.26.0",
+    "babel-core": "~6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "~7.1.4",
+    "babel-plugin-transform-class-properties": "~6.24.1",
+    "babel-plugin-transform-decorators-legacy": "1.3.4",
+    "babel-plugin-transform-object-rest-spread": "~6.26.0",
+    "babel-preset-env": "~1.6.1",
+    "babel-preset-react": "~6.24.1",
+    "backstopjs": "^3.1.0",
+    "css-loader": "^0.28.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "1.5.0",
+    "enzyme-to-json": "^3.3.1",
+    "eslint": "4.19.1",
+    "eslint-config-standard": "11.0.0",
+    "eslint-config-standard-jsx": "5.0.0",
+    "eslint-config-standard-react": "6.0.0",
+    "eslint-import-resolver-webpack": "~0.9.0",
+    "eslint-plugin-contains": "0.0.1",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jest": "~21.15.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.7.0",
+    "eslint-plugin-react": "7.7.0",
+    "eslint-plugin-standard": "3.0.1",
+    "husky": "^0.14.3",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "~22.4.2",
+    "json-loader": "~0.5.4",
+    "lint-staged": "^7.0.5",
+    "lodash": "~4.17.4",
+    "node-sass": "4.9.3",
+    "node-sass-tilde-importer": "^1.0.0",
+    "postcss-cli": "^5.0.0",
+    "postcss-loader": "^2.1.1",
+    "prettier": "^1.5.3",
+    "prettier-eslint-cli": "^4.1.1",
+    "prettier-stylelint": "0.4.2",
+    "prop-types": "^15.6.1",
+    "randomstring": "1.1.5",
+    "raw-loader": "0.5.1",
+    "react": "~16.5.0",
+    "react-dom": "~16.5.0",
+    "react-lorem-component": "^0.13.0",
+    "react-md": "^1.6.1",
+    "react-storybook-addon-chapters": "^2.1.2",
+    "react-test-renderer": "~16.5.0",
+    "react-transition-group": "^2.4.0",
+    "regenerator-runtime": "0.11.1",
+    "sass-extract": "^2.1.0",
+    "sass-loader": "~6.0.3",
+    "sinon": "^4.4.0",
+    "standard": "11.0.1",
+    "style-loader": "^0.20.3",
+    "stylelint": "^9.1.3",
+    "stylelint-config-prettier": "^3.2.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Component should render an Error component with defaults 1`] = `
+<CSSTransition
+  appear={true}
+  classNames="kuali-alert"
+  in={true}
+  mountOnEnter={true}
+  timeout={
+    Object {
+      "appear": 650,
+      "exit": 600,
+    }
+  }
+  unmountOnExit={true}
+>
+  <div
+    className="kuali-alert--container kuali-alert--type---info"
+  >
+    <div
+      className="kuali-alert--icon---box"
+    >
+      <Icon
+        aria-hidden={true}
+        iconClassName="material-icons"
+        name="info"
+        variant="info"
+      />
+    </div>
+    <div
+      className="kuali-alert--data---box"
+    >
+      <h1>
+        Info
+      </h1>
+      <p />
+    </div>
+    <div
+      className="kuali-alert--header---close"
+    >
+      <IconButton
+        onClick={[Function]}
+      >
+        <Icon
+          aria-hidden={true}
+          iconClassName="material-icons"
+          name="clear"
+          variant="default"
+        />
+      </IconButton>
+    </div>
+  </div>
+</CSSTransition>
+`;

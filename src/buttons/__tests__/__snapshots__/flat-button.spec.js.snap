@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlatButton Component should render 1`] = `
+<withInk(withTooltip(Button))
+  block={false}
+  component="button"
+  flat={true}
+  icon={false}
+  iconBefore={true}
+  size="default"
+  type="submit"
+  variant="default"
+/>
+`;

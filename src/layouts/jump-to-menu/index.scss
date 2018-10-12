@@ -1,0 +1,78 @@
+/* Copyright © 2016 Kuali, Inc. - All Rights Reserved
+ * You may use and modify this code under the terms of the Kuali, Inc.
+ * Pre-Release License Agreement. You may not distribute it.
+ *
+ * You should have received a copy of the Kuali, Inc. Pre-Release License
+ * Agreement with this file. If not, please write to license@kuali.co.
+ */
+
+$jump-to-menu-border: 1px solid #CCC;
+
+.jump-to-menu {
+  margin-bottom: 20px;
+}
+
+.jump-to-menu__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  border-top: $jump-to-menu-border;
+  display: none;
+}
+
+.jump-to-menu--expanded {
+  .jump-to-menu__list {
+    margin-top: 20px;
+    display: block;
+  }
+}
+
+.jump-to-menu__item {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: $jump-to-menu-border;
+  text-decoration: none;
+  outline: none;
+  color: palette(glacier);
+}
+
+.jump-to-menu__badge {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 1px;
+  background-color: palette('flare');
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFF;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 100%;
+}
+
+.jump-to-menu__item-inner {
+  @include ellipsis();
+
+  padding: 10px 0;
+}
+
+.jump-to-menu__item__indicator {
+  margin-left: auto;
+}
+
+.jump-to-menu__expand-button {
+  margin: 0;
+}
+
+@include media('>=desktop') {
+  .jump-to-menu__list {
+    display: block;
+  }
+
+  .jump-to-menu__expand-button {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlatButton Component should render 1`] = `
+<div
+  className="kuali-button-group"
+>
+  <RaisedButton
+    label="First"
+  />
+  <RaisedButton
+    label="Second"
+    variant="primary"
+  />
+  <RaisedButton
+    label="Third"
+  />
+  <RaisedButton
+    label="Forth"
+  />
+</div>
+`;

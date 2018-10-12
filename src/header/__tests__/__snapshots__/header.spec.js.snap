@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component should render a Header component with correct properties 1`] = `
+<header
+  className="layout__header"
+>
+  <span
+    className="header__title"
+  >
+    Conflict of Interest
+  </span>
+  <span
+    className="header__brand-logo-container"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="link"
+    tabIndex={0}
+  >
+    <BrandLogo
+      className="header__brand-logo"
+    />
+  </span>
+  <div
+    className="header__brand-divider"
+  />
+  <Menu
+    anchor={
+      Object {
+        "x": "inner right",
+        "y": "overlap",
+      }
+    }
+    cascadingAnchor={
+      Object {
+        "x": "right",
+        "y": "overlap",
+      }
+    }
+    cascadingZDepth={3}
+    className="header__menu-container"
+    fixedTo={[Window]}
+    id="header-menu"
+    listHeightRestricted={true}
+    listStyle={
+      Object {
+        "right": 10,
+        "top": "100%",
+      }
+    }
+    listZDepth={2}
+    onClick={[Function]}
+    onClose={[Function]}
+    onKeyPress={[Function]}
+    position="tr"
+    repositionOnResize={false}
+    repositionOnScroll={true}
+    sameWidth={false}
+    simplified={true}
+    toggle={
+      <AccessibleFakeButton
+        className="header__menu-button"
+        component="div"
+        listenToEnter={true}
+        listenToSpace={true}
+        noFocusOutline={true}
+        role="button"
+        tabIndex={0}
+      >
+        <withInk(UserDetails)
+          inkTransitionEnterTimeout={450}
+          inkTransitionLeaveTimeout={300}
+          inkTransitionOverlap={150}
+          user={
+            Object {
+              "name": "Slartibartfast",
+            }
+          }
+        />
+      </AccessibleFakeButton>
+    }
+    visible={false}
+  >
+    <ListItem
+      activeClassName="md-text--theme-primary"
+      animateNestedItems={true}
+      component="div"
+      expanderIcon={
+        <FontIcon
+          iconClassName="material-icons"
+        >
+          keyboard_arrow_down
+        </FontIcon>
+      }
+      itemComponent="li"
+      key="0"
+      onClick={[Function]}
+      primaryText="User Settings"
+      renderChildrenOutside={false}
+    />
+  </Menu>
+</header>
+`;
+
+exports[`Header Component should render a Header component with no user or module name 1`] = `
+<header
+  className="layout__header"
+>
+  <span
+    className="header__title"
+  />
+  <span
+    className="header__brand-logo-container"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="link"
+    tabIndex={0}
+  >
+    <BrandLogo
+      className="header__brand-logo"
+    />
+  </span>
+  <Menu
+    anchor={
+      Object {
+        "x": "inner right",
+        "y": "overlap",
+      }
+    }
+    cascadingAnchor={
+      Object {
+        "x": "right",
+        "y": "overlap",
+      }
+    }
+    cascadingZDepth={3}
+    className="header__menu-container"
+    fixedTo={[Window]}
+    id="header-menu"
+    listHeightRestricted={true}
+    listStyle={
+      Object {
+        "right": 10,
+        "top": "100%",
+      }
+    }
+    listZDepth={2}
+    onClick={[Function]}
+    onClose={[Function]}
+    onKeyPress={[Function]}
+    position="tr"
+    repositionOnResize={false}
+    repositionOnScroll={true}
+    sameWidth={false}
+    simplified={true}
+    toggle={
+      <AccessibleFakeButton
+        className="header__menu-button"
+        component="div"
+        listenToEnter={true}
+        listenToSpace={true}
+        noFocusOutline={true}
+        role="button"
+        tabIndex={0}
+      />
+    }
+    visible={false}
+  />
+</header>
+`;
+
+exports[`Header Component should render a Header with a custom logo 1`] = `
+<header
+  className="layout__header"
+>
+  <span
+    className="header__title"
+  >
+    COI
+  </span>
+  <span
+    className="header__brand-logo-container"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="link"
+    tabIndex={0}
+  >
+    <img
+      className="header__brand-logo"
+      src="https://localhost/logo.png"
+    />
+  </span>
+  <Menu
+    anchor={
+      Object {
+        "x": "inner right",
+        "y": "overlap",
+      }
+    }
+    cascadingAnchor={
+      Object {
+        "x": "right",
+        "y": "overlap",
+      }
+    }
+    cascadingZDepth={3}
+    className="header__menu-container"
+    fixedTo={[Window]}
+    id="header-menu"
+    listHeightRestricted={true}
+    listStyle={
+      Object {
+        "right": 10,
+        "top": "100%",
+      }
+    }
+    listZDepth={2}
+    onClick={[Function]}
+    onClose={[Function]}
+    onKeyPress={[Function]}
+    position="tr"
+    repositionOnResize={false}
+    repositionOnScroll={true}
+    sameWidth={false}
+    simplified={true}
+    toggle={
+      <AccessibleFakeButton
+        className="header__menu-button"
+        component="div"
+        listenToEnter={true}
+        listenToSpace={true}
+        noFocusOutline={true}
+        role="button"
+        tabIndex={0}
+      />
+    }
+    visible={false}
+  />
+</header>
+`;

@@ -1,0 +1,21 @@
+version: 0.2
+
+env:
+  variables:
+    NODE_ENV: "development"
+
+phases:
+  install:
+    commands:
+      - echo Installing Dependencies
+      - npm install
+  build:
+    commands:
+      - echo Running Tests
+      - npm test
+      - echo Building Docs
+      - npm run storybook:compile
+  post_build:
+    commands:
+      - echo Uploading Docs
+      - aws s3 sync docs s3://$BUCKET_NAME --delete
